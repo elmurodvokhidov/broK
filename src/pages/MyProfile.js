@@ -2,7 +2,9 @@ import { useContext } from "react"
 import { ContexData } from "../context/ContextDate"
 
 function MyProfile() {
-    const { backfunc, myProf } = useContext(ContexData)
+
+    const { backfunc, myProf } = useContext(ContexData);
+
     return (
         <>
             <div className="myProfile">
@@ -12,17 +14,17 @@ function MyProfile() {
                             <button onClick={backfunc}><span>back</span></button>
                         </div>
                         <div className="centerTop">
-                            <h1>log In</h1>
+                            <h1>Log In</h1>
                         </div>
                         <div className="rightTop">
 
                         </div>
                     </div>
                     <div className="centerLI">
-                        <div className="inputUchun">
+                        {/* <div className="inputUchun">
                             <label htmlFor="fullName">Full name</label>
                             <input type="text" name="fullName" id="fullName" placeholder="Enter your full name" />
-                        </div>
+                        </div> */}
                         <div className="inputUchun">
                             <label htmlFor="email">email</label>
                             <input type="text" name="email" id="email" placeholder="Enter your email" />

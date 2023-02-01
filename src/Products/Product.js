@@ -12,15 +12,17 @@ import { AiOutlineEye } from 'react-icons/ai';
 import { PaginateST } from '../paginate/PaginateA';
 import { PaginateND } from '../paginate/PaginateB';
 import { CgMenuGridO, CgMenu } from "react-icons/cg";
+import Navbar from '../Navbar';
+import Footer from '../Footer';
+
+
 function Product() {
 
-    const { allIinfo, basketFunk, eyeFunc, bilmadim, refresh2 } = useContext(ContexData);
+    const { allIinfo, basketFunk, eyeFunc, bilmadim, refresh2, bilmadimT, bilmadimF, value, setValue } = useContext(ContexData);
 
     function valuetext(value) {
         return `${value}°C`;
     }
-
-    const [value, setValue] = React.useState([13.99, 25.99]);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -41,24 +43,9 @@ function Product() {
         inputProps: { 'aria-label': item },
     });
 
-    // bilmadimT
-    function bilmadimT() {
-        if (localStorage.getItem('bilmadimLocal') === 'true') {
-            localStorage.setItem('bilmadimLocal', 'false')
-        }
-        refresh2()
-    }
-
-    // bilmadimT
-    function bilmadimF() {
-        if (localStorage.getItem('bilmadimLocal') === 'false') {
-            localStorage.setItem('bilmadimLocal', 'true')
-        }
-        refresh2()
-    }
-
     return (
         <>
+            <Navbar />
             <div className="Product">
                 <div className="oneLeft">
                     <div className="hW_left">
@@ -141,8 +128,8 @@ function Product() {
                             <span>*</span>
                         </div>
                         <div className="right">
-                            <button onClick={bilmadimT}><span><CgMenuGridO /></span></button>
-                            <button onClick={bilmadimF}><span><CgMenu /></span></button>
+                            <button onClick={bilmadimF}><span><CgMenuGridO /></span></button>
+                            <button onClick={bilmadimT}><span><CgMenu /></span></button>
                         </div>
                     </div>
                     {
@@ -153,7 +140,8 @@ function Product() {
                     }
                 </div>
             </div>
+            <Footer />
         </>
     )
 }
-export default Product
+export default Product;

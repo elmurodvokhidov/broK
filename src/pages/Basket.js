@@ -5,6 +5,8 @@ import { ContexData } from "../context/ContextDate";
 import { PaymentModal1 } from "../layouts/PaymentModal1";
 import { PaymentModal2 } from "../layouts/PaymentModal2";
 import { PaymentModal3 } from "../layouts/PaymentModal3";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function Basket() {
 
@@ -12,6 +14,7 @@ function Basket() {
 
     return (
         <>
+            <Navbar />
             <div className="Basket">{
                 modalUchun ?
                     <div className="modalOyna" onClick={modalClose}>
@@ -56,7 +59,7 @@ function Basket() {
                     </div> : ''
             }
                 <div className="Top">
-                    
+
                     <table>
                         <thead>
                             <tr>
@@ -124,6 +127,7 @@ function Basket() {
                 </div>
 
             </div>
+            <Footer />
         </>
     )
 }

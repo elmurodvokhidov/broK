@@ -5,6 +5,8 @@ import { SlBasket } from "react-icons/sl/";
 import { useContext } from "react";
 import { ContexData } from "../context/ContextDate";
 import { AiOutlineEye } from "react-icons/ai/"
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function Home() {
 
@@ -12,10 +14,8 @@ function Home() {
 
     return (
         <>
+            <Navbar />
             <div className="Home">
-
-
-
                 <section className="HomeOne">
                     <div className="textHOne">
                         <h1>
@@ -96,13 +96,13 @@ function Home() {
                     <div className="HTrBottom">
                         {
                             bestSeller.map(val => (
-                                <div className="BCAOne">
+                                <div className="BCAOne" key={val.id}>
                                     <div className="rasmBCAOne">
                                         <div className="modal">
                                             <div className="icons">
                                                 <button className="iconBtn" onClick={() => add_to_favorite(val)}> <span><FcLike /></span></button>
-                                                <button className="iconBtn" onClick={() =>add_to_basket(val)}><span><SlBasket /></span></button>
-                                                <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye/></span></button>
+                                                <button className="iconBtn" onClick={() => add_to_basket(val)}><span><SlBasket /></span></button>
+                                                <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye /></span></button>
                                             </div>
                                         </div>
                                         <figure><img src={val.img} alt={val.img} /></figure>
@@ -125,14 +125,14 @@ function Home() {
                     </div>
                     <div className="HTrBottom1">
                         {
-                            bestSeller1.map(val => (
-                                <div className="BCAOne">
+                            bestSeller1.map((val, index) => (
+                                <div className="BCAOne" key={index}>
                                     <div className="rasmBCAOne">
                                         <div className="modal">
                                             <div className="icons">
                                                 <button className="iconBtn" onClick={() => add_to_favorite(val)}><span><FcLike /></span></button>
                                                 <button className="iconBtn" onClick={() => basketFunk(val)}><span><SlBasket /></span></button>
-                                                <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye/></span></button>
+                                                <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye /></span></button>
                                             </div>
                                         </div>
                                         <figure><img src={val.img} alt={val.img} /></figure>
@@ -202,7 +202,7 @@ function Home() {
                             <h1>LATEST NEWS</h1>
                         </div>
                         <div className="bottom">
-                        <div className="HFiveCardB">
+                            <div className="HFiveCardB">
                                 <div className="left"><img src="./img/nike.png" alt="" /></div>
                                 <div className="right">
                                     <p>01 Jan, 2015</p>
@@ -234,11 +234,11 @@ function Home() {
                                 <div className="right">
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
-                                        <BasicRating/>
+                                        <BasicRating />
                                     </div>
                                     <div className="price">
-                                    <span>$499</span>
-                                    <span>$599</span>
+                                        <span>$499</span>
+                                        <span>$599</span>
                                     </div>
                                 </div>
                             </div>
@@ -247,11 +247,11 @@ function Home() {
                                 <div className="right">
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
-                                        <BasicRating/>
+                                        <BasicRating />
                                     </div>
                                     <div className="price">
-                                    <span>$499</span>
-                                    <span>$599</span>
+                                        <span>$499</span>
+                                        <span>$599</span>
                                     </div>
                                 </div>
                             </div>
@@ -260,11 +260,11 @@ function Home() {
                                 <div className="right">
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
-                                        <BasicRating/>
+                                        <BasicRating />
                                     </div>
                                     <div className="price">
-                                    <span>$499</span>
-                                    <span>$599</span>
+                                        <span>$499</span>
+                                        <span>$599</span>
                                     </div>
                                 </div>
                             </div>
@@ -277,6 +277,7 @@ function Home() {
                     </div>
                 </section>
             </div>
+            <Footer />
         </>
     )
 }

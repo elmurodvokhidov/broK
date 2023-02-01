@@ -6,12 +6,13 @@ import { FcLike } from 'react-icons/fc';
 import { SlBasket } from 'react-icons/sl';
 // import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import ReactPaginate from 'react-paginate';
+import { Loader } from '../loader/Loader';
 import { ContexData } from '../context/ContextDate';
 import { BasicRating } from '../layouts/StarRating';
 
 export function PaginateST() {
 
-    const { allIinfo, likeFunc, basketFunc, eyeFunc, add_to_basket, add_to_favorite } = useContext(ContexData);
+    const { allIinfo, likeFunc, basketFunc, eyeFunc, add_to_basket, add_to_favorite, value } = useContext(ContexData);
 
     // Loader State
     const [loading, setLoading] = useState(false);
@@ -21,7 +22,7 @@ export function PaginateST() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 2500);
+        }, 800);
     }, []);
 
     const [currentItems, setCurrentItems] = useState([]);
@@ -36,7 +37,7 @@ export function PaginateST() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 2500);
+        }, 800);
     }, [itemOffset, itemsPerPage, allIinfo]);
 
 
@@ -49,9 +50,16 @@ export function PaginateST() {
         <>
             <div className="paginateWrapper1">
                 {
-                    loading ? 'loading...' :
-                    currentItems.map(val => (
-                        <div className="A">
+                    loading ? <Loader /> :
+                    currentItems
+                            .filter((item) => {
+                                if (
+                                    item.price > value[0] && item.price < value[1]
+                                ) {
+                                    return item;
+                                }
+                            }).map(val => (
+                        <div className="A" key={val.id}>
                             <div className="bottomOneCard">
                                 <div className="rasmBCAOne">
                                     <div className="modal">

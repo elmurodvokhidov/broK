@@ -3,15 +3,18 @@ import { AiOutlineEye } from "react-icons/ai"
 import { FcLike } from "react-icons/fc"
 import { SlBasket } from "react-icons/sl"
 import { ContexData } from "../context/ContextDate"
+import Footer from "../Footer"
 import { BasicRating } from "../layouts/StarRating"
+import Navbar from "../Navbar"
 
 export function Favorite() {
-    const { forFavorite, add_to_favorite, delete_to_favorite,add_to_basket } = useContext(ContexData)
+    const { forFavorite, add_to_favorite, delete_to_favorite, add_to_basket } = useContext(ContexData)
     return (
         <>
+            <Navbar />
             <div className="favorite">
-            <div className="favoriteCards">
-                        {/* {
+                <div className="favoriteCards">
+                    {/* {
                             forFavorite.map(val => (
                                 <div className="favoriteCard">
                                     <div className="rasmFavorite">
@@ -38,7 +41,7 @@ export function Favorite() {
                                 </div>
                             ))
                         } */}
-                        <div className="HTrBottom1">
+                    <div className="HTrBottom1">
                         {
                             forFavorite.map(val => (
                                 <div className="BCAOne">
@@ -47,7 +50,7 @@ export function Favorite() {
                                             <div className="icons">
                                                 <button className="iconBtn" onClick={() => delete_to_favorite(val)}><span><FcLike /></span></button>
                                                 <button className="iconBtn" onClick={() => add_to_basket(val)}><span><SlBasket /></span></button>
-                                                <button className="iconBtn" ><span><AiOutlineEye/></span></button>
+                                                <button className="iconBtn" ><span><AiOutlineEye /></span></button>
                                             </div>
                                         </div>
                                         <figure><img src={val.img} alt={val.img} /></figure>
@@ -67,8 +70,9 @@ export function Favorite() {
                             ))
                         }
                     </div>
-                    </div>
+                </div>
             </div>
+            <Footer />
         </>
     )
 }

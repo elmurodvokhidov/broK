@@ -17,19 +17,18 @@
 
 /* navbar */
 .navbar {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 1600px;
-  width: 100%;
-  height: auto;
   padding: 29px 104px;
 }
 
 .navTop {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: 100%; */
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 
   /* gap: 700px; */
@@ -53,22 +52,25 @@
 
 .nTopRight {
   display: flex;
+  align-items: flex-start;
   gap: 35px;
 }
 
 .myProfile {
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3px;
 }
 
-.myProfile button {
+.myProfileLink button {
   border: none;
   background-color: #fff;
 }
 
-.myProfile span {
+.myProfileLink span {
   color: black;
 }
 
@@ -129,6 +131,11 @@
   font-size: 24px;
   line-height: 36px;
   color: #262626;
+  user-select: none;
+}
+
+.nBottomRight a:focus {
+  color: #336CFB;
 }
 
 
@@ -1678,6 +1685,7 @@ td {
 
 /* Paginate */
 .paginateWrapper1 {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 30%);
   gap: 20px;
@@ -1741,6 +1749,7 @@ td {
 .paginateWrapper2 {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .bottomTwoCardA {
@@ -1898,7 +1907,7 @@ td {
 }
 
 .logIn {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1917,30 +1926,31 @@ td {
 .topLI:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-.leftTop button
-{
+
+.leftTop button {
   padding: 10px 14px;
   border: 1px solid white;
   background-color: #40BFFF;
   border-radius: 25px;
 }
-.leftTop span
-{
+
+.leftTop span {
   color: white;
 }
-.centerTop h1
-{
+
+.centerTop h1 {
   text-align: center;
   position: relative;
   color: #336CFB;
 }
-.centerLI
-{
+
+.centerLI {
   /* width: 25%; */
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .centerLI input {
   padding: 8px;
   font-size: 14px;
@@ -1948,21 +1958,21 @@ td {
   border-radius: 4px;
   outline: none;
 }
-.inputUchun
-{
+
+.inputUchun {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.bottomLI
-{
+
+.bottomLI {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bottomLI button
-{
+
+.bottomLI button {
   padding: 10px 25px;
   border-radius: 5px;
   border: none;
@@ -1973,29 +1983,32 @@ td {
 
 
 /* crud */
-
-
-
-.crud
-{
+.crud {
   width: 100%;
+  height: 100vh;
   padding: 200px 100px;
   background-color: cornflowerblue;
-  
+
 }
-.add 
-{
+
+.crud h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.add {
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-.add form
-{
+
+.add form {
   display: flex;
   gap: 15px;
   flex-direction: column;
   align-items: center;
 }
+
 .add form input {
   width: 600px;
   padding: 10px 10px;
@@ -2003,9 +2016,20 @@ td {
   border: none;
   outline: none;
 }
-.add form button
-{
+
+.add form button {
   padding: 5px 80px;
   border: none;
   border-radius: 5px;
+}
+
+/* Loader */
+.loaderComp {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }

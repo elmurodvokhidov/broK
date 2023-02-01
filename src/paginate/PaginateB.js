@@ -8,10 +8,11 @@ import { SlBasket } from 'react-icons/sl';
 import ReactPaginate from 'react-paginate';
 import { ContexData } from '../context/ContextDate';
 import { BasicRating } from '../layouts/StarRating';
+import { Loader } from '../loader/Loader';
 
 export function PaginateND() {
 
-    const { allIinfo, likeFunc, basketFunc, eyeFunc, basketLink, add_to_basket, add_to_favorite } = useContext(ContexData);
+    const { allIinfo, likeFunc, basketFunc, eyeFunc, basketLink, add_to_basket, add_to_favorite, value } = useContext(ContexData);
 
     // Loader State
     const [loading, setLoading] = useState(false);
@@ -21,7 +22,7 @@ export function PaginateND() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 2500);
+        }, 800);
     }, []);
 
     const [currentItems, setCurrentItems] = useState([]);
@@ -36,7 +37,7 @@ export function PaginateND() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 2500);
+        }, 800);
     }, [itemOffset, itemsPerPage, allIinfo]);
 
 
@@ -49,9 +50,16 @@ export function PaginateND() {
         <>
             <div className="paginateWrapper2">
                 {
-                    loading ? 'loading...' :
-                    currentItems.map(val => (
-                        <div className="bottomTwoCardA">
+                    loading ? <Loader /> :
+                    currentItems
+                            .filter((item) => {
+                                if (
+                                    item.price > value[0] && item.price < value[1]
+                                ) {
+                                    return item;
+                                }
+                            }).map(val => (
+                        <div className="bottomTwoCardA" key={val.id}>
                             <div className="left"><img src={val.img} alt={val.title} /></div>
                             <div className="right">
                                 <h1>{val.title}</h1>

@@ -7,195 +7,195 @@ function ContextFunc({ children }) {
 
     const [bestSeller, setBestSeller] = useState([
         {
-            count: 0, id: "best1", img: "./img/krosovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best1", img: "./img/krosovka.png", title: "Nike Air Max 270 React", price: 43, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: "best2", img: "./img/image Product (4).png", title: "image Product (4).png", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best2", img: "./img/image Product (4).png", title: "image Product (4).png", price: 93, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: "best3", img: "./img/image Product (7).png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best3", img: "./img/image Product (7).png", title: "Nike Air Max 270 React", price: 23, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: "best4", img: "./img/image Product (3).png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best4", img: "./img/image Product (3).png", title: "Nike Air Max 270 React", price: 34, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
 
     ])
     const [bestSeller1, setBestSeller1] = useState([
         {
-            count: 0, id: "best5", img: "./img/image Product (7).png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best5", img: "./img/image Product (7).png", title: "Nike Air Max 270 React", price: 42, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: "best6", img: "./img/Product Picture02.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best6", img: "./img/Product Picture02.png", title: "Nike Air Max 270 React", price: 55, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: "best7", img: "./img/image Product (4).png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best7", img: "./img/image Product (4).png", title: "Nike Air Max 270 React", price: 12, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: "best8", img: "./img/Product Picture01.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best8", img: "./img/Product Picture01.png", title: "Nike Air Max 270 React", price: 78, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
     ])
     const [bedtSeller2, setBestSeller2] = useState([
         {
-            count: 0, id: 'best9', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best9', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 88, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best10', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best10', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 35, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best11', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best11', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 41, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best12', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best12', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 91, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best13', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best13', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 76, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best14', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best14', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 18, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best15', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best15', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 85, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best16', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best16', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 22, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: 'best17', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: "299.43", prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: 'best17', img: "./img/qizilKrasovka.png", title: "Nike Air Max 270 React", price: 5, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         }
     ])
     const [bags, setBags] = useState([
         {
-            count: 0, id: 'bags1', img: './img/bags.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags1', img: './img/bags.jpg', title: 'bags', price: 39.5, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags2', img: './img/bagsA.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags2', img: './img/bagsA.jpg', title: 'bags', price: 35, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags3', img: './img/bagsB.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags3', img: './img/bagsB.jpg', title: 'bags', price: 99, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags4', img: './img/bagsC.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags4', img: './img/bagsC.jpg', title: 'bags', price: 100, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags5', img: './img/bagsA.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags5', img: './img/bagsA.jpg', title: 'bags', price: 3, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags6', img: './img/bags.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags6', img: './img/bags.jpg', title: 'bags', price: 19, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags7', img: './img/bags.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags7', img: './img/bags.jpg', title: 'bags', price: 45, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags8', img: './img/bagsA.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags8', img: './img/bagsA.jpg', title: 'bags', price: 15, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags9', img: './img/bagsB.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags9', img: './img/bagsB.jpg', title: 'bags', price: 66, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags10', img: './img/bagsC.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags10', img: './img/bagsC.jpg', title: 'bags', price: 67, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
         {
-            count: 0, id: 'bags11', img: './img/bags.jpg', title: 'bags', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
+            count: 0, id: 'bags11', img: './img/bags.jpg', title: 'bags', price: 70, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5',
         },
     ])
     const [sneakers, setSneakers] = useState([
         {
-            count: 0, id: 'sneaker1', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker1', img: './img/krosovka.png', title: 'Sneaker', price: 45, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker2', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker2', img: './img/krosovka.png', title: 'Sneaker', price: 28, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker3', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker3', img: './img/krosovka.png', title: 'Sneaker', price: 15.5, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker4', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker4', img: './img/krosovka.png', title: 'Sneaker', price: 64, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker5', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker5', img: './img/krosovka.png', title: 'Sneaker', price: 55, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker6', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker6', img: './img/krosovka.png', title: 'Sneaker', price: 79, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker7', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker7', img: './img/krosovka.png', title: 'Sneaker', price: 99.5, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker8', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker8', img: './img/krosovka.png', title: 'Sneaker', price: 13, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker9', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker9', img: './img/krosovka.png', title: 'Sneaker', price: 43, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker10', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker10', img: './img/krosovka.png', title: 'Sneaker', price: 73, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker11', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker11', img: './img/krosovka.png', title: 'Sneaker', price: 65, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker12', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker12', img: './img/krosovka.png', title: 'Sneaker', price: 88, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker13', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker13', img: './img/krosovka.png', title: 'Sneaker', price: 94, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker14', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker14', img: './img/krosovka.png', title: 'Sneaker', price: 21.5, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker15', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker15', img: './img/krosovka.png', title: 'Sneaker', price: 33, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'sneaker16', img: './img/krosovka.png', title: 'Sneaker', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'sneaker16', img: './img/krosovka.png', title: 'Sneaker', price: 47, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         }
     ])
     const [belt, setBelt] = useState([
         {
-            count: 0, id: 'belt1', img: './img/belt1.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt1', img: './img/belt1.jpg', title: 'Belt', price: 22, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt2', img: './img/belt2.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt2', img: './img/belt2.jpg', title: 'Belt', price: 43, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt3', img: './img/belt3.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt3', img: './img/belt3.jpg', title: 'Belt', price: 55, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt4', img: './img/belt4.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt4', img: './img/belt4.jpg', title: 'Belt', price: 76, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt5', img: './img/belt5.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt5', img: './img/belt5.jpg', title: 'Belt', price: 87, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt6', img: './img/belt6.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt6', img: './img/belt6.jpg', title: 'Belt', price: 56, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt7', img: './img/belt1.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt7', img: './img/belt1.jpg', title: 'Belt', price: 45, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt8', img: './img/belt2.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt8', img: './img/belt2.jpg', title: 'Belt', price: 43, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt9', img: './img/belt3.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt9', img: './img/belt3.jpg', title: 'Belt', price: 23, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt10', img: './img/belt4.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt10', img: './img/belt4.jpg', title: 'Belt', price: 78, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt11', img: './img/belt5.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt11', img: './img/belt5.jpg', title: 'Belt', price: 75, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt12', img: './img/belt6.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt12', img: './img/belt6.jpg', title: 'Belt', price: 45, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt13', img: './img/belt1.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt13', img: './img/belt1.jpg', title: 'Belt', price: 34, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt14', img: './img/belt2.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt14', img: './img/belt2.jpg', title: 'Belt', price: 56, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt15', img: './img/belt3.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt15', img: './img/belt3.jpg', title: 'Belt', price: 23, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         },
         {
-            count: 0, id: 'belt16', img: './img/belt4.jpg', title: 'Belt', price: '399.5', prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
+            count: 0, id: 'belt16', img: './img/belt4.jpg', title: 'Belt', price: 12, prev: '400', about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: '0.5'
         }
     ])
     // loader
@@ -225,7 +225,10 @@ function ContextFunc({ children }) {
         prev: '',
         about: '',
         skidka: ''
-    })
+    });
+
+    // Price Range State
+    const [value, setValue] = React.useState([0, 100]);
 
     // Basket malumotlari
     const [forLocal, setForLocal] = useState(
@@ -322,13 +325,39 @@ function ContextFunc({ children }) {
 
     // Bilmayman
     const [bilmadim, setBilmadim] = useState(
-        JSON.parse(localStorage.getItem('bilmadimLocal')) || true
+        JSON.parse(localStorage.getItem('bilmadimLocal'))
     )
 
     function refresh2() {
         setBilmadim(
             JSON.parse(localStorage.getItem('bilmadimLocal'))
         )
+    }
+
+    // bilmadimT
+    function bilmadimT() {
+        if (localStorage.getItem('bilmadimLocal') === 'true') {
+            localStorage.setItem('bilmadimLocal', 'false')
+        }
+        // else {
+        //     setBilmadim(
+        //         localStorage.setItem('bilmadimLocal', 'true')
+        //     )
+        // }
+        refresh2()
+    }
+
+    // bilmadimT
+    function bilmadimF() {
+        if (localStorage.getItem('bilmadimLocal') === 'false') {
+            localStorage.setItem('bilmadimLocal', 'true')
+        }
+        // else {
+        //     setBilmadim(
+        //         localStorage.setItem('bilmadimLocal', 'false')
+        //     )
+        // }
+        refresh2()
     }
 
     function modalFunc() {
@@ -501,7 +530,11 @@ function ContextFunc({ children }) {
             inputFunc,
             photoFunc,
             Add,
-            inputData
+            inputData,
+            bilmadimT,
+            bilmadimF,
+            value,
+            setValue
         }}>
             {children}
         </ContexData.Provider>
