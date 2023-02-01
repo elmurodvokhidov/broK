@@ -201,6 +201,32 @@ function ContextFunc({ children }) {
     // loader
     const [loader, setLoader] = useState(false);
 
+    const [allIinfo, setAllIinfo] = useState([
+        ...bestSeller, ...bestSeller1, ...bedtSeller2, ...bags
+    ])
+    // console.log(allIinfo);
+    const [modalUchun, setModalUchun] = useState(false);
+    const [goToState, setGoToState] = useState({
+        goToFirst: true,
+        goToSecond: false,
+        goToThird: false,
+    });
+    const eyeLink = useNavigate();
+    const basketLink = useNavigate();
+    const favoriteLink = useNavigate();
+    const addAcc = useNavigate();
+    const backLink = useNavigate();
+    const [inputData, setInputData] = useState({
+        count: '',
+        id: '',
+        photo: '',
+        title: '',
+        price: '',
+        prev: '',
+        about: '',
+        skidka: ''
+    })
+
     // Basket malumotlari
     const [forLocal, setForLocal] = useState(
         JSON.parse(localStorage.getItem('forLocal')) ||
@@ -213,21 +239,10 @@ function ContextFunc({ children }) {
         []
     )
 
-    const [inputData, setInputData] = useState({
-        count:'',
-        id:'',
-        photo:'',
-        title: '',
-        price:'',
-        prev:'',
-        about:'',
-        skidka:''
-    })
-    
     function inputFunc(e) {
         setInputData({
             ...inputData,
-            [e.target.count] : e.target.value
+            [e.target.count]: e.target.value
         })
     }
 
@@ -247,18 +262,18 @@ function ContextFunc({ children }) {
                 'forLocal',
                 JSON.stringify([
                     ...JSON.parse(localStorage.getItem('forLocal')),
-                    {...inputData, id:new Date().getTime()}
+                    { ...inputData, id: new Date().getTime() }
                 ])
             )
-            } else {
-                localStorage.setItem(
-                    'forLocal',
-                    JSON.stringify([{...inputData, id: new Date().getTime()}])
-                )
-            
+        } else {
+            localStorage.setItem(
+                'forLocal',
+                JSON.stringify([{ ...inputData, id: new Date().getTime() }])
+            )
+
         }
     }
-    
+
     // forLocal refresh funksiyasi
     function refresh() {
         setForLocal(
@@ -315,22 +330,6 @@ function ContextFunc({ children }) {
             JSON.parse(localStorage.getItem('bilmadimLocal'))
         )
     }
-
-    const [allIinfo, setAllIinfo] = useState([
-        ...bestSeller, ...bestSeller1, ...bedtSeller2, ...bags
-    ])
-    // console.log(allIinfo);
-    const [modalUchun, setModalUchun] = useState(false);
-    const [goToState, setGoToState] = useState({
-        goToFirst: true,
-        goToSecond: false,
-        goToThird: false,
-    });
-    const eyeLink = useNavigate();
-    const basketLink = useNavigate();
-    const favoriteLink = useNavigate();
-    const addAcc = useNavigate();
-    const backLink = useNavigate();
 
     function modalFunc() {
         setModalUchun(true);
