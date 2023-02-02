@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
-import { AiOutlineEye } from 'react-icons/ai';
-import { FaRegHeart } from 'react-icons/fa';
-import { FcLike, FcLikePlaceholder } from 'react-icons/fc';
+import { AiOutlineHeart } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
 // import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import ReactPaginate from 'react-paginate';
@@ -78,7 +76,7 @@ export function PaginateND() {
                                         <span>{val.about.length > 180 ? val.about.slice(0, 180) + '...' : val.about}</span>
                                     </div>
                                     <div className="rightBottom2">
-                                        <button id="btnOneinR-B" onClick={() =>add_to_basket(val)}> <span><SlBasket /></span> Add To Cart</button> <button id="btnTwoinR-B" onClick={()=>add_to_favorite(val)}><FcLikePlaceholder/></button>
+                                        <button id="btnOneinR-B" onClick={() =>add_to_basket(val)}> <span><SlBasket /></span> Add To Cart</button> <button id="btnTwoinR-B" onClick={()=>add_to_favorite(val)}><AiOutlineHeart/></button>
                                     </div>
                             </div>
                         </div>

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { BasicRating } from "../layouts/StarRating";
-import { FcLike } from "react-icons/fc/";
+import { AiOutlineHeart } from "react-icons/ai/";
 import { SlBasket } from "react-icons/sl/";
 import { useContext } from "react";
 import { ContexData } from "../context/ContextDate";
@@ -80,7 +80,7 @@ function Home() {
 
 
 
-                <section className="HomeThree">
+                <div className="HomeThree">
                     <div className="HTrTop">
                         <div className="HTrTtext">
                             <h1>BEST SELLER</h1>
@@ -100,7 +100,7 @@ function Home() {
                                     <div className="rasmBCAOne">
                                         <div className="modal">
                                             <div className="icons">
-                                                <button className="iconBtn" onClick={() => add_to_favorite(val)}> <span><FcLike /></span></button>
+                                                <button className="iconBtn" onClick={() => add_to_favorite(val)}> <span><AiOutlineHeart /></span></button>
                                                 <button className="iconBtn" onClick={() => add_to_basket(val)}><span><SlBasket /></span></button>
                                                 <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye /></span></button>
                                             </div>
@@ -113,9 +113,9 @@ function Home() {
                                             <BasicRating />
                                         </div>
                                         <div className="alohida">
-                                            <h1>{val.price}</h1>
-                                            <p>{val.prev}</p>
-                                            <h3>{val.skidka}</h3>
+                                            <h1>${val.price}</h1>
+                                            <p>${val.prev}</p>
+                                            <h3>{val.skidka}% Off</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@ function Home() {
                                     <div className="rasmBCAOne">
                                         <div className="modal">
                                             <div className="icons">
-                                                <button className="iconBtn" onClick={() => add_to_favorite(val)}><span><FcLike /></span></button>
+                                                <button className="iconBtn" onClick={() => add_to_favorite(val)}><span><AiOutlineHeart /></span></button>
                                                 <button className="iconBtn" onClick={() => basketFunk(val)}><span><SlBasket /></span></button>
                                                 <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye /></span></button>
                                             </div>
@@ -143,16 +143,16 @@ function Home() {
                                             <BasicRating />
                                         </div>
                                         <div className="alohida">
-                                            <h1>{val.price}</h1>
-                                            <p>{val.prev}</p>
-                                            <h3>{val.skidka}</h3>
+                                            <h1>${val.price}</h1>
+                                            <p>${val.prev}</p>
+                                            <h3>{val.skidka}% Off</h3>
                                         </div>
                                     </div>
                                 </div>
                             ))
                         }
                     </div>
-                </section>
+                </div>
 
 
 

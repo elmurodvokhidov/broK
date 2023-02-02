@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { AiOutlineEye } from 'react-icons/ai';
 import { FaRegHeart } from 'react-icons/fa';
-import { FcLike } from 'react-icons/fc';
+import { AiOutlineHeart } from 'react-icons/ai';
 import { SlBasket } from 'react-icons/sl';
 // import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import ReactPaginate from 'react-paginate';
@@ -64,7 +64,7 @@ export function PaginateST() {
                                 <div className="rasmBCAOne">
                                     <div className="modal">
                                         <div className="icons">
-                                            <button className="iconBtn" onClick={() => add_to_favorite(val)}><span><FcLike /></span></button>
+                                            <button className="iconBtn" onClick={() => add_to_favorite(val)}><span><AiOutlineHeart /></span></button>
                                             <button className="iconBtn" onClick={() => add_to_basket(val)}><span><SlBasket /></span></button>
                                             <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye /></span></button>
                                         </div>

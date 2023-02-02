@@ -81,7 +81,7 @@ function Basket() {
                                                 <p>{val.title}</p>
                                             </div>
                                         </td>
-                                        <td>${val.price}</td>
+                                        <td>${val.count > 1 ? val.price * val.count : val.price}</td>
                                         <td>
                                             <div className="basketPrice">
                                                 <button onClick={() => decFunc(val)}>-</button>
@@ -119,7 +119,7 @@ function Basket() {
                         <div className="bottomBottom">
                             <div className="bottomOne">
                                 <h1>TOTAL</h1>
-                                <h1>$118</h1>
+                                <h1>${forLocal.reduce((a, b) => a + b.count * b.price, 0)}</h1>
                             </div>
                             <button onClick={modalFunc}>Check out</button>
                         </div>

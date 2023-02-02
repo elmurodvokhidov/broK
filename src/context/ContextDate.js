@@ -10,7 +10,7 @@ function ContextFunc({ children }) {
             count: 0, id: "best1", img: "./img/krosovka.png", title: "Nike Air Max 270 React", price: 43, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
-            count: 0, id: "best2", img: "./img/image Product (4).png", title: "image Product (4).png", price: 93, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+            count: 0, id: "best2", img: "./img/image Product (4).png", title: "Nike Air Max 270 React", price: 93, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
         {
             count: 0, id: "best3", img: "./img/image Product (7).png", title: "Nike Air Max 270 React", price: 23, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
@@ -201,9 +201,6 @@ function ContextFunc({ children }) {
     // loader
     const [loader, setLoader] = useState(false);
 
-    const [allIinfo, setAllIinfo] = useState([
-        ...bestSeller, ...bestSeller1, ...bedtSeller2, ...bags
-    ])
     // console.log(allIinfo);
     const [modalUchun, setModalUchun] = useState(false);
     const [goToState, setGoToState] = useState({
@@ -216,65 +213,30 @@ function ContextFunc({ children }) {
     const favoriteLink = useNavigate();
     const addAcc = useNavigate();
     const backLink = useNavigate();
-    const [inputData, setInputData] = useState({
-        count: '',
-        id: '',
-        photo: '',
-        title: '',
-        price: '',
-        prev: '',
-        about: '',
-        skidka: ''
-    });
 
     // Price Range State
     const [value, setValue] = React.useState([0, 100]);
 
     // Basket malumotlari
     const [forLocal, setForLocal] = useState(
-        JSON.parse(localStorage.getItem('forLocal')) ||
-        []
+        JSON.parse(localStorage.getItem('forLocal')) || []
     )
 
     // Favorite malumotlari
     const [forFavorite, setForFavorite] = useState(
-        JSON.parse(localStorage.getItem('forFavorite')) ||
-        []
+        JSON.parse(localStorage.getItem('forFavorite')) || []
     )
 
-    function inputFunc(e) {
-        setInputData({
-            ...inputData,
-            [e.target.count]: e.target.value
-        })
-    }
+    // Yangi mahsulot
+    const [yangiP, setYangiP] = useState(
+        JSON.parse(localStorage.getItem('yangiP')) || []
+    )
 
-    // foto func
-    function photoFunc(e) {
-        setInputData({
-            ...inputData,
-            photo: URL.createObjectURL(e.target.filter[0])
-        })
-    }
-
-    // Add func
-    function Add(e) {
-        e.preventDefault();
-        if (localStorage.getItem('forLocal')) {
-            localStorage.setItem(
-                'forLocal',
-                JSON.stringify([
-                    ...JSON.parse(localStorage.getItem('forLocal')),
-                    { ...inputData, id: new Date().getTime() }
-                ])
-            )
-        } else {
-            localStorage.setItem(
-                'forLocal',
-                JSON.stringify([{ ...inputData, id: new Date().getTime() }])
-            )
-
-        }
+    // Yangi Mahsulot Refresh
+    function yangiRef() {
+        setYangiP(
+            JSON.parse(localStorage.getItem('yangiP')) || []
+        )
     }
 
     // forLocal refresh funksiyasi
@@ -489,6 +451,11 @@ function ContextFunc({ children }) {
         backLink('/')
     }
 
+    // Hamma mahsulotlar
+    const [allIinfo, setAllIinfo] = useState([
+        ...yangiP, ...bestSeller, ...bestSeller1, ...bedtSeller2, ...bags
+    ])
+
 
     return (
         <ContexData.Provider value={{
@@ -527,14 +494,13 @@ function ContextFunc({ children }) {
             decFunc,
             backfunc,
             myProf,
-            inputFunc,
-            photoFunc,
-            Add,
-            inputData,
             bilmadimT,
             bilmadimF,
             value,
-            setValue
+            setValue,
+            yangiP,
+            setYangiP,
+            yangiRef
         }}>
             {children}
         </ContexData.Provider>

@@ -76,6 +76,7 @@
 
 .itogo {
   display: flex;
+  border: 1px solid black;
 }
 
 .itogo button {
@@ -87,9 +88,9 @@
 }
 
 .itogo input {
-  /* width: ; */
   border: none;
   padding: 5px;
+  outline: none;
 }
 
 .basket span {
@@ -104,9 +105,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-
   color: #262626;
-
   opacity: 0.5;
 }
 
@@ -119,6 +118,10 @@
 
 .nBottomLeft {
   display: flex;
+}
+
+.nBottomLeft h1 {
+  font-family: 'Raleway';
 }
 
 .nBottomRight {
@@ -145,9 +148,7 @@
 
 
 .Home {
-  /* max-width: 1400px; */
   width: 100%;
-  /* width: 1300px; */
 }
 
 .wrapper {
@@ -161,6 +162,7 @@
   height: 653.73px;
   background-image: url(/public/img/HPnebg.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .textHOne h1 {
@@ -178,6 +180,9 @@
 }
 
 .CardsA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: -100px 50px;
   display: flex;
 }
@@ -221,7 +226,7 @@
 }
 
 .BottomRightTCaO {
-  margin: -10px 250px;
+  margin: -10px 200px;
 }
 
 .BottomRightTCaO p {
@@ -269,7 +274,7 @@
 }
 
 .bottomCaT {
-  padding: 220px 90px;
+  /* padding: 220px 90px; */
   display: flex;
   gap: 10px;
 }
@@ -349,22 +354,30 @@
 
 .HomeThree {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
   padding: 164px 84px;
+  margin: 100px 0px;
 }
 
+/* 
 .HTrTop {
   padding: 0 441px;
-}
+} */
 
 .HTrTtext {
   padding: 0 30px;
 }
 
 .HTrTtext h1 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 35px;
   line-height: 52px;
   color: #22262A;
+  font-family: 'Poppins';
 }
 
 .HTrlinks {
@@ -418,6 +431,10 @@
   line-height: 180%;
   letter-spacing: 0.5px;
   color: #40BFFF;
+}
+
+.alohida p {
+  text-decoration: line-through;
 }
 
 .BCAOne .text p {
@@ -495,12 +512,12 @@
 
 .HTrBottom {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .HTrBottom1 {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 
@@ -556,6 +573,8 @@
 
 .HomeFive .Cards {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 150px;
 }
 
@@ -709,7 +728,7 @@
 
 /* footer */
 .Footer {
-  padding: 154px 100px;
+  padding: 154px 100px 50px;
   background: #BCDDFE;
 }
 
@@ -1670,7 +1689,6 @@ td {
 .goodsInTheBags .rasmBCAOne figure {
   width: 299px;
   height: 260px;
-  background-color: red;
 }
 
 .goodsInTheBags .rasmBCAOne figure img {
@@ -1844,7 +1862,7 @@ td {
   height: 46px;
   width: 150px;
   border: none;
-  background: #33A0FF;
+  background: #33a0ff29;
   border-radius: 5px;
 }
 
@@ -1853,7 +1871,7 @@ td {
   width: 46px;
   height: 46px;
   border: none;
-  background: #33A0FF;
+  background: #33a0ff29;
   border-radius: 5px;
 }
 

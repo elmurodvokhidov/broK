@@ -23,7 +23,7 @@ function Navbar() {
                         </div>
                         <div className="basket"> <NavLink to="/basket"><span><SlBasket /></span></NavLink> </div>
                         <div className="items"><p> <NavLink to="/like"><span>like </span></NavLink> </p></div>
-                        <div className="itogo"><input type="text" placeholder="$0.00" /><button><BiSearch /></button></div>
+                        <div className="itogo"><input type="search" placeholder="$0.00" /><button><BiSearch /></button></div>
 
                     </div>
                 </div>
