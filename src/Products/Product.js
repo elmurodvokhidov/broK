@@ -18,7 +18,7 @@ import Footer from '../Footer';
 
 function Product() {
 
-    const { allIinfo, basketFunk, eyeFunc, bilmadim, refresh2, bilmadimT, bilmadimF, value, setValue } = useContext(ContexData);
+    const { allIinfo, basketFunk, eyeFunc, bilmadim, refresh2, bilmadimT, bilmadimF, value, setValue, show, setShow, selectedValue, setSelectedValue, setRang } = useContext(ContexData);
 
     function valuetext(value) {
         return `${value}°C`;
@@ -28,11 +28,9 @@ function Product() {
         setValue(newValue);
     };
 
-    // Color Radio Button
-    const [selectedValue, setSelectedValue] = React.useState('a');
-
     const handleChange1 = (event) => {
         setSelectedValue(event.target.value);
+        // setRang(event.target.value);
     };
 
     const controlProps = (item) => ({
@@ -42,6 +40,8 @@ function Product() {
         name: 'color-radio-button-demo',
         inputProps: { 'aria-label': item },
     });
+
+    console.log(show);
 
     return (
         <>
@@ -120,12 +120,17 @@ function Product() {
                     <div className="centerOne">
                         <div className="left">
                             <span>{allIinfo.length} Items</span>
-                            <span>Sort By</span>
+                            {/* <span>Sort By</span>
                             <span>Name</span>
-                            <span>*</span>
+                            <span>*</span> */}
                             <span>Show</span>
-                            <span>12</span>
-                            <span>*</span>
+                            <select name="#" id="#" onChange={(e) => setShow(e.target.value)}>
+                                <option value="">None</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                            </select>
                         </div>
                         <div className="right">
                             <button onClick={bilmadimF}><span><CgMenuGridO /></span></button>

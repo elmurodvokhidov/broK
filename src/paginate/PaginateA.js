@@ -12,7 +12,7 @@ import { BasicRating } from '../layouts/StarRating';
 
 export function PaginateST() {
 
-    const { allIinfo, likeFunc, basketFunc, eyeFunc, add_to_basket, add_to_favorite, value } = useContext(ContexData);
+    const { allIinfo, likeFunc, basketFunc, eyeFunc, add_to_basket, add_to_favorite, value, show, selectedValue } = useContext(ContexData);
 
     // Loader State
     const [loading, setLoading] = useState(false);
@@ -28,7 +28,14 @@ export function PaginateST() {
     const [currentItems, setCurrentItems] = useState([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
-    const itemsPerPage = 9;
+    let itemsPerPage = 9;
+
+    if (show !== '') {
+        itemsPerPage = +show;
+    }
+    else {
+        itemsPerPage = 9
+    }
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
@@ -45,6 +52,8 @@ export function PaginateST() {
         const newOffset = (event.selected * itemsPerPage) % allIinfo.length;
         setItemOffset(newOffset);
     };
+    
+    // item.rang.toLowerCase().includes(selectedValue.toLowerCase()) &&
 
     return (
         <>
