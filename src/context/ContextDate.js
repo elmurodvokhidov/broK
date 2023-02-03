@@ -297,12 +297,12 @@ function ContextFunc({ children }) {
 
     // Bilmayman
     const [bilmadim, setBilmadim] = useState(
-        JSON.parse(localStorage.getItem('bilmadimLocal'))
+        localStorage.getItem('bilmadimLocal') ? JSON.parse(localStorage.getItem('bilmadimLocal')) : localStorage.setItem('bilmadimLocal', 'true')
     )
 
     function refresh2() {
         setBilmadim(
-            JSON.parse(localStorage.getItem('bilmadimLocal'))
+            localStorage.getItem('bilmadimLocal') ? JSON.parse(localStorage.getItem('bilmadimLocal')) : localStorage.setItem('bilmadimLocal', 'true')
         )
     }
 
