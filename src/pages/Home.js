@@ -162,9 +162,7 @@ function Home() {
                             <h1>Adidas Men Running <br />
                                 Sneakers</h1>
                             <span>Performance and design. Taken right to the edge.</span>
-                            <p>SHOP NOW <br />
-                                ______</p>
-
+                            <p>SHOP NOW</p>
                         </div>
                     </div>
                     <div className="right">

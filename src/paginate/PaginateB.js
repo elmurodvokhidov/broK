@@ -10,7 +10,7 @@ import { Loader } from '../loader/Loader';
 
 export function PaginateND() {
 
-    const { allIinfo, likeFunc, basketFunc, eyeFunc, basketLink, add_to_basket, add_to_favorite, value, show } = useContext(ContexData);
+    const { allIinfo, likeFunc, basketFunc, eyeFunc, basketLink, add_to_basket, add_to_favorite, value, show, selectedValue, kategory } = useContext(ContexData);
 
     // Loader State
     const [loading, setLoading] = useState(false);
@@ -59,6 +59,8 @@ export function PaginateND() {
                     currentItems
                             .filter((item) => {
                                 if (
+                                    item.kategoriya.toLowerCase().includes(kategory.toLowerCase()) &&
+                                    item.rang.toLowerCase().includes(selectedValue.toLowerCase()) &&
                                     item.price > value[0] && item.price < value[1]
                                 ) {
                                     return item;

@@ -255,8 +255,6 @@ function ContextFunc({ children }) {
     
     // Mahsulotni ko'rinish soni
     const [show, setShow] = useState('');
-    
-    const [rang, setRang] = useState('');
 
     const [kategory, setKategory] = useState('');
 
@@ -515,8 +513,6 @@ function ContextFunc({ children }) {
             yangiRef,
             show,
             setShow,
-            rang,
-            setRang,
             kategory,
             setKategory,
             selectedValue,

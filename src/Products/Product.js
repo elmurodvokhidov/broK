@@ -18,7 +18,7 @@ import Footer from '../Footer';
 
 function Product() {
 
-    const { allIinfo, basketFunk, eyeFunc, bilmadim, refresh2, bilmadimT, bilmadimF, value, setValue, show, setShow, selectedValue, setSelectedValue, setRang } = useContext(ContexData);
+    const { allIinfo, basketFunk, eyeFunc, bilmadim, refresh2, bilmadimT, bilmadimF, value, setValue, show, setShow, selectedValue, setSelectedValue, kategory, setKategory } = useContext(ContexData);
 
     function valuetext(value) {
         return `${value}°C`;
@@ -28,9 +28,9 @@ function Product() {
         setValue(newValue);
     };
 
+    // Color
     const handleChange1 = (event) => {
         setSelectedValue(event.target.value);
-        // setRang(event.target.value);
     };
 
     const controlProps = (item) => ({
@@ -41,7 +41,12 @@ function Product() {
         inputProps: { 'aria-label': item },
     });
 
-    console.log(show);
+    // Clear Funksiyasi
+    function clearFilter() {
+        setSelectedValue('');
+        setKategory('');
+        setValue([0, 100]);
+    }
 
     return (
         <>
@@ -51,13 +56,10 @@ function Product() {
                     <div className="hW_left">
                         <div className="deal">
                             <h1>Hot Deals</h1>
-                            <button>Nike <span>2</span></button>
-                            <button>Airmax <span>48</span></button>
-                            <button>Nike <span>14</span></button>
-                            <button>Adidas <span>15</span></button>
-                            <button>Vans <span>23</span></button>
-                            <button>All Stars <span>1</span></button>
-                            <button>Adidas <span>95</span></button>
+                            <button onClick={() => setKategory('b')}>Nike <span>2</span></button>
+                            <button onClick={() => setKategory('a')}>Airmax <span>48</span></button>
+                            <button onClick={() => setKategory('d')}>Adidas <span>15</span></button>
+                            <button onClick={() => setKategory('c')}>Vans <span>23</span></button>
                         </div>
 
                         <div className="price">
@@ -103,7 +105,7 @@ function Product() {
                             <button>Siemens <span>99</span></button>
                         </div>
 
-                        <button className="moreBtn">MORE</button>
+                        <button className="moreBtn" onClick={clearFilter}>Clear</button>
                     </div>
                 </div>
                 <div className="oneRight">

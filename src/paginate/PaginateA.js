@@ -12,7 +12,7 @@ import { BasicRating } from '../layouts/StarRating';
 
 export function PaginateST() {
 
-    const { allIinfo, likeFunc, basketFunc, eyeFunc, add_to_basket, add_to_favorite, value, show, selectedValue } = useContext(ContexData);
+    const { allIinfo, likeFunc, basketFunc, eyeFunc, add_to_basket, add_to_favorite, value, show, selectedValue, kategory } = useContext(ContexData);
 
     // Loader State
     const [loading, setLoading] = useState(false);
@@ -54,6 +54,7 @@ export function PaginateST() {
     };
     
     // item.rang.toLowerCase().includes(selectedValue.toLowerCase()) &&
+    // console.log(currentItems);
 
     return (
         <>
@@ -63,6 +64,8 @@ export function PaginateST() {
                     currentItems
                             .filter((item) => {
                                 if (
+                                    item.kategoriya.toLowerCase().includes(kategory.toLowerCase()) &&
+                                    item.rang.toLowerCase().includes(selectedValue.toLowerCase()) &&
                                     item.price > value[0] && item.price < value[1]
                                 ) {
                                     return item;
