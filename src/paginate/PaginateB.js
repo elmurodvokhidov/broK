@@ -56,7 +56,7 @@ export function PaginateND() {
             <div className="paginateWrapper2">
                 {
                     loading ? <Loader /> :
-                    currentItems
+                        currentItems
                             .filter((item) => {
                                 if (
                                     item.kategoriya.toLowerCase().includes(kategory.toLowerCase()) &&
@@ -66,30 +66,30 @@ export function PaginateND() {
                                     return item;
                                 }
                             }).map(val => (
-                        <div className="bottomTwoCardA" key={val.id}>
-                            <div className="left"><img src={val.img} alt={val.title} /></div>
-                            <div className="right">
-                                <h1>{val.title}</h1>
-                                <div className="rightTop">
-                                    <BasicRating />
-                                    <span id="n_1R-T">0 reviews</span>
-                                    <span id="n_2R-T">Submit a review</span>
+                                <div className="bottomTwoCardA" key={val.id}>
+                                    <div className="left"><img src={val.img} alt={val.title} /></div>
+                                    <div className="right">
+                                        <h1>{val.title}</h1>
+                                        <div className="rightTop">
+                                            <BasicRating />
+                                            <span id="n_1R-T">0 reviews</span>
+                                            <span id="n_2R-T">Submit a review</span>
+                                        </div>
+                                        <hr />
+                                        <div className="pricesinA">
+                                            <h3>${val.price * (100 - val.skidka) / 100}</h3>
+                                            <span>${val.price}</span>
+                                            <p id="skidka">{val.skidka}% Off</p>
+                                        </div>
+                                        <div className="aboutinBottom-Two">
+                                            <span>{val.about.length > 180 ? val.about.slice(0, 180) + '...' : val.about}</span>
+                                        </div>
+                                        <div className="rightBottom2">
+                                            <button id="btnOneinR-B" onClick={() => add_to_basket(val)}> <span><SlBasket /></span> Add To Cart</button> <button id="btnTwoinR-B" onClick={() => add_to_favorite(val)}><AiOutlineHeart /></button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <hr />
-                                    <div className="pricesinA">
-                                        <h3>${val.price}</h3>
-                                        <span>${val.prev}</span>
-                                        <p id="skidka">{val.skidka}% Off</p>
-                                    </div>
-                                    <div className="aboutinBottom-Two">
-                                        <span>{val.about.length > 180 ? val.about.slice(0, 180) + '...' : val.about}</span>
-                                    </div>
-                                    <div className="rightBottom2">
-                                        <button id="btnOneinR-B" onClick={() =>add_to_basket(val)}> <span><SlBasket /></span> Add To Cart</button> <button id="btnTwoinR-B" onClick={()=>add_to_favorite(val)}><AiOutlineHeart/></button>
-                                    </div>
-                            </div>
-                        </div>
-                    ))
+                            ))
                 }
             </div>
 

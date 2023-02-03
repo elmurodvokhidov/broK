@@ -261,7 +261,7 @@ function ContextFunc({ children }) {
     // Color Radio Button
     const [selectedValue, setSelectedValue] = React.useState('a');
 
-    console.log(selectedValue);
+    // console.log(selectedValue);
 
     // Increment Function
     function incFunc(item) {

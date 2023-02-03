@@ -88,8 +88,8 @@ export function PaginateST() {
                                     <BasicRating />
                                 </div>
                                 <div className="pricesinA">
-                                    <h3>${val.price}</h3>
-                                    <span>${val.pre}</span>
+                                    <h3>${val.price * (100 - val.skidka) / 100 }</h3>
+                                    <span>${val.price}</span>
                                     <p id="skidka">{val.skidka}% Off</p>
                                 </div>
                             </div>

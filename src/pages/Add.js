@@ -50,7 +50,7 @@ function Add() {
             )
 
         }
-        console.log(inputData);
+        // console.log(inputData);
         setInputData({
             count: '',
             photo: '',
