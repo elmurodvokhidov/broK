@@ -17,9 +17,6 @@ export function PaginateST() {
     // Loader State
     const [loading, setLoading] = useState(false);
 
-
-    // Salom olam
-
     // Loader Timer
     useEffect(() => {
         setLoading(true);
