@@ -2,12 +2,25 @@ import { Routes, Route, NavLink } from "react-router-dom";
 import { AiFillCaretDown, AiOutlineUser } from "react-icons/ai";
 import { SlBasket } from "react-icons/sl";
 import { BiSearch } from "react-icons/bi";
+import { HiMenu } from "react-icons/hi";
 
 function Navbar() {
     return (
         <>
             <div className="mediaNavbar">
-                
+                <button className="hamburger"><span><HiMenu /></span></button>
+                <div className="itogo"><input type="text" placeholder="$0.00" /><button><BiSearch /></button></div>
+                <div className="nTopRight">
+                    <div className="myProfileLink">
+                        <button>
+                            <NavLink to='/myprofil'>
+                                <span id="myProf"><AiOutlineUser /></span>
+                            </NavLink>
+                        </button>
+                    </div>
+                    <div className="basket"> <NavLink to="/basket"><span><SlBasket /></span></NavLink> </div>
+                    <div className="items"><p> <NavLink to="/like"><span>like </span></NavLink> </p></div>
+                </div>
             </div>
             <div className="navbar">
                 <div className="navTop">
@@ -26,7 +39,7 @@ function Navbar() {
                         </div>
                         <div className="basket"> <NavLink to="/basket"><span><SlBasket /></span></NavLink> </div>
                         <div className="items"><p> <NavLink to="/like"><span>like </span></NavLink> </p></div>
-                        <div className="itogo"><input type="search" placeholder="$0.00" /><button><BiSearch /></button></div>
+                        <div className="itogo"><input type="text" placeholder="$0.00" /><button><BiSearch /></button></div>
 
                     </div>
                 </div>
