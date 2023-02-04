@@ -6,6 +6,9 @@ import { BiSearch } from "react-icons/bi";
 function Navbar() {
     return (
         <>
+            <div className="mediaNavbar">
+                
+            </div>
             <div className="navbar">
                 <div className="navTop">
                     <div className="nTopLeft">

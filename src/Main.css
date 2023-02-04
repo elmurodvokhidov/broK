@@ -2133,6 +2133,10 @@ td {
   bottom: 23px;
 }
 
+.mediaNavbar {
+  display: none;
+}
+
 
 /* media (1024px) */
 
@@ -2285,3 +2289,15 @@ td {
 }
 
 /* for my little brother :) */
+
+/* media (768px) */
+
+@media (max-width: 769px) {
+  .navbar {
+    display: none;
+  }
+  .mediaNavbar {
+    display: block;
+    background-color: red;
+  }
+}
