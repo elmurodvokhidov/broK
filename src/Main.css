@@ -113,7 +113,6 @@
 }
 
 .navBottom {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,8 +127,9 @@
 }
 
 .nBottomRight {
+  width: 500px;
   display: flex;
-  gap: 70px;
+  gap: 40px;
 }
 
 .nBottomRight a {
@@ -186,16 +186,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -100px 50px;
+  /* margin: -100px 50px; */
   display: flex;
 }
 
 .CardAone {
+  /* width: 100%; */
   padding: 29px 52px;
   height: 358.3149719238281px;
   width: 417.94091796875px;
   border-radius: 5px;
   background-image: url(/public/img/sumkaDlyaJenshin.png);
+}
+
+.CardAone .img {
+  width: 0px;
 }
 
 .topTCaO p {
@@ -363,7 +368,7 @@
   justify-content: center;
   gap: 30px;
   padding: 164px 84px;
-  margin: 100px 0px;
+  /* margin: 100px 0px; */
 }
 
 /* 
@@ -396,6 +401,17 @@
   line-height: 33px;
   color: black;
 }
+
+.obshiyCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .HTrBottom {
+
+} */
 
 .HTrBCardsA {
   display: flex;
@@ -515,14 +531,15 @@
 }
 
 .HTrBottom {
-  display: flex;
-  gap: 30px;
+  /* display: flex; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 20px;
+  justify-content: space-between;
+  /* gap: 30px; */
 }
 
-.HTrBottom1 {
-  display: flex;
-  gap: 30px;
-}
 
 
 /* section four */
@@ -531,12 +548,14 @@
 .HomeFour {
   width: 100%;
   display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
   position: relative;
   background: #40BFFF;
 }
 
 .HomeFour .left {
-  padding: 140px 83px;
+  padding: 100px 53px;
 }
 
 .LeftText h1 {
@@ -566,8 +585,9 @@
 
 .HomeFour .right {
   position: absolute;
-  right: 0;
-  bottom: 70px;
+  left: 550px;
+  right: 0px;
+  bottom: 0;
 }
 
 
@@ -1110,9 +1130,6 @@
 
 .tOneRight {
   width: 50%;
-  margin-top: -100px;
-  margin-left: -200px;
-  /* background-color: blue; */
 }
 
 .tOneRight img {
@@ -2101,10 +2118,12 @@ td {
 .selectOne select:focus {
   border: 1px solid #33A0FF;
 }
+
 .left select {
   padding: 5px 10px;
   border: 1px solid black;
 }
+
 .Product .paginateWrapper1 .modal {
   position: absolute;
   width: 92%;
@@ -2112,4 +2131,155 @@ td {
   top: 18px;
   left: 10px;
   bottom: 23px;
+}
+
+
+/* media (1024px) */
+
+
+@media (max-width: 1025px) {
+
+  /* H O M E */
+  .nBottomLeft {
+    width: 100%;
+  }
+
+  .nBottomLeft img {
+    max-width: 100%;
+  }
+
+  .nBottomLeft h1 {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .nBottomRight {
+    padding: 20px;
+  }
+
+  .nBottomRight a {
+    font-size: 18px;
+  }
+
+  .HomeOne {
+    width: 100%;
+  }
+
+  .HomeOne img {
+    width: 100%;
+  }
+
+  .HomeTwo {
+    display: none;
+  }
+
+  .HomeThree {
+    width: 100%;
+  }
+
+  .obshiyCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .HTrBottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 20px;
+    justify-content: space-between;
+
+  }
+
+  .HomeFour {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .LeftText h1 {
+    font-size: 28px;
+  }
+
+  .HomeFour .right {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .HomeFour .right img {
+    width: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .HomeFive {
+    width: 100%;
+  }
+
+  .HFiveCardB {
+    width: 100%;
+  }
+
+  .HFiveCardB img {
+    width: 100px;
+  }
+
+  .fPbottomCard .left {
+    width: 100%;
+  }
+
+  .fPbottomCard .left img {
+    width: 100px;
+  }
+
+  .footerTop h1 {
+    font-size: 15px;
+  }
+
+  .fCenterA span {
+    font-size: 15px;
+  }
+
+
+  /* B A G S */
+  .goodsInTheBags {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .goodsInTheBags .A {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+
+  /* S N E A K E R S */
+  .cardsInSneakers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardInSneakers {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+
+  /* Products */
+  .tOneLeft h1
+  {
+    font-size: 25px;
+  }
 }

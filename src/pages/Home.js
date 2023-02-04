@@ -35,6 +35,7 @@ function Home() {
                                     <div className="topTCaO"><p>
                                         FS - QUILTED MAXI <br /> CROSS BAG
                                     </p></div>
+                                    <div className="img"></div>
                                     <div className="bottomTCaO">
                                         <div className="BottomLeftTCaO">
                                             <p>$534,33</p>
@@ -93,6 +94,7 @@ function Home() {
                             <NavLink to="/">Sunglasses</NavLink>
                         </div>
                     </div>
+                    <div className="obshiyCard">
                     <div className="HTrBottom">
                         {
                             bestSeller.map(val => (
@@ -123,7 +125,7 @@ function Home() {
                         }
 
                     </div>
-                    <div className="HTrBottom1">
+                    {/* <div className="HTrBottom1">
                         {
                             bestSeller1.map((val, index) => (
                                 <div className="BCAOne" key={index}>
@@ -151,6 +153,7 @@ function Home() {
                                 </div>
                             ))
                         }
+                    </div> */}
                     </div>
                 </div>
 

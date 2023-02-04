@@ -18,6 +18,18 @@ function ContextFunc({ children }) {
         {
             count: 0, rang: 'd', kategoriya: 'd', id: "best4", img: "./img/image Product (3).png", title: "Nike Air Max 270 React", price: 34, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
         },
+        {
+            count: 0, rang: 'e', kategoriya: 'a', id: "best5", img: "./img/image Product (7).png", title: "Nike Air Max 270 React", price: 42, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+        },
+        {
+            count: 0, rang: 'a', kategoriya: 'b', id: "best6", img: "./img/Product Picture02.png", title: "Nike Air Max 270 React", price: 55, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+        },
+        {
+            count: 0, rang: 'b', kategoriya: 'c', id: "best7", img: "./img/image Product (4).png", title: "Nike Air Max 270 React", price: 12, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+        },
+        {
+            count: 0, rang: 'c', kategoriya: 'd', id: "best8", img: "./img/Product Picture01.png", title: "Nike Air Max 270 React", price: 78, prev: "534.33", about: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt fugit. Quo, quae quia similique quaerat quis ut optio! Non soluta odit corrupti magnam, dicta qui nobis aliquid mollitia ipsa obcaecati fugit! Nulla, fugiat aut!', skidka: "24",
+        },
 
     ])
     const [bestSeller1, setBestSeller1] = useState([
@@ -252,7 +264,7 @@ function ContextFunc({ children }) {
             JSON.parse(localStorage.getItem('forFavorite')) || []
         )
     }
-    
+
     // Mahsulotni ko'rinish soni
     const [show, setShow] = useState('');
 
