@@ -12,10 +12,10 @@ function Home() {
 
     const { bestSeller, bestSeller1, basketFunk, eyeFunc, add_to_favorite, add_to_basket } = useContext(ContexData);
 
-    const [clock, setClock] = useState([]);
+    const [taymer, setTaymer] = useState([]);
 
-    function clockFunc() {
-        setClock([{
+    function taymerFunk() {
+        setTaymer([{
             hour: `${new Date().getHours()}`,
             minute: `${new Date().getMinutes()}`,
             seconds: `${new Date().getSeconds()}`
@@ -24,7 +24,7 @@ function Home() {
 
     useEffect(() => {
         setInterval(() => {
-            clockFunc();
+            taymerFunk();
         }, 1000);
     }, []);
 
@@ -40,7 +40,7 @@ function Home() {
                         </h1>
                     </div>
                         {
-                            clock.map((a, b) => (
+                            taymer.map((a, b) => (
                                 <div className="taymer" key={b}>
                                     <div className="soat">{a.hour < 10 ? '0' + a.hour : a.hour}</div>
                                     <span>:</span>
