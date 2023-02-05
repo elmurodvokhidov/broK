@@ -2307,6 +2307,7 @@ td {
     z-index: 10;
     padding: 20px 50px;
     border-bottom: 1.5px solid #ebf0ff;
+    /* transition: .5s ease-in; */
     background-color: white;
   }
 
@@ -2409,6 +2410,51 @@ td {
 
   .BCAOne .rasmBCAOne img {
     width: 100%;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0);
+  }
+  .siderbarCont {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: silver;
+  }
+  .sidebarTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebarTop .nBottomLeft {
+    gap: 10px;
+  }
+  .chiqish {
+    border: none;
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .sidebarCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    gap: 25px;
+  }
+  .sidebarCenter a {
+    color: black;
+  }
+  .sidebarBottom p {
+    color: rgba(0, 0, 0, 0.532);
   }
 
   /* <<<<<<<< Bularni keyinchalik o'chirib tashlang, scroll bo'lib qolganligi uchun
