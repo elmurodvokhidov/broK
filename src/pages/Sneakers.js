@@ -14,6 +14,7 @@ function Sneakers() {
             <Navbar />
             <div className="sneakers">
                 <div className="cardsInSneakers">
+                    <h1 className="gIBTitle">Sneakers</h1>
                     <div className="cardInSneakers">
                         {
                             sneakers.map(val => (
