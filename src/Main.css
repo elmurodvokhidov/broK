@@ -555,6 +555,7 @@
 }
 
 .HomeFour .left {
+  /* width: 40%; */
   padding: 100px 53px;
 }
 
@@ -589,7 +590,10 @@
   right: 0px;
   bottom: 0;
 }
-
+.HomeFour .right img
+{
+  width: 794.56px;
+}
 
 /* section five */
 
@@ -2210,14 +2214,14 @@ td {
   }
 
   .HomeFour .right {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
   }
 
 
 
   .HomeFour .right img {
-    width: 500px;
+    width: 470px;
     position: absolute;
     left: 0;
     right: 0;
@@ -2291,8 +2295,12 @@ td {
 /* for my little brother :) */
 
 /* media (768px) */
-
+/* 
 @media (max-width: 769px) {
+  .Home
+  {
+    width: 769px;
+  }
   .navbar {
     display: none;
   }
@@ -2300,4 +2308,17 @@ td {
     display: block;
     background-color: red;
   }
-}
+  .HomeOne
+  {
+    width: 768px;
+    background-image: url(/public/img/HPnebg.png);
+  }
+  .HomeFour .left
+  {
+    width: 40%;
+  }
+  .HomeFour .right
+  {
+    width: 50%;
+  }
+} */
