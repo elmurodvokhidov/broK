@@ -18,8 +18,10 @@
 /* navbar */
 .navbar {
   /* width: 100%;
-  position: fixed;
-  z-index: 10; */
+  /* position: fixed; */
+  z-index: 999; 
+  position: sticky;
+  top: 0;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -2138,6 +2140,10 @@ td {
 }
 
 .mediaNavbar {
+  display: none;
+}
+
+.taymer {
   display: none;
 }
 
