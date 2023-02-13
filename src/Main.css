@@ -19,7 +19,7 @@
 .navbar {
   /* width: 100%;
   /* position: fixed; */
-  z-index: 999; 
+  z-index: 999;
   position: sticky;
   top: 0;
   background-color: white;
@@ -97,12 +97,15 @@
   padding: 5px;
   outline: none;
 }
+
 .basket {
   position: relative;
 }
+
 .basket span {
   color: black;
 }
+
 #length {
   position: absolute;
   top: -3px;
@@ -121,6 +124,7 @@
 .items {
   position: relative;
 }
+
 .items span {
   color: black;
 }
@@ -2571,5 +2575,65 @@ td {
     gap: 0px;
     padding: 0px;
     justify-content: center;
+  }
+
+  .favorite {
+    padding: 30px 70px;
+  }
+
+  .HTrBottom1 {
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+  }
+
+  /* MyProfie || Login */
+
+  .logIn {
+    width: 45%;
+  }
+
+  /* Basket table */
+
+  .Basket {
+    padding: 150px 50px 100px;
+
+  }
+
+  .Basket .Top {
+    overflow: auto;
+  }
+
+  .Basket .Top table {
+    width: 150%;
+  }
+
+  th {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  td {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .Basket .Bottom {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .topOneA {
+    justify-content: space-between;
+  }
+
+  .topTwo {
+    justify-content: space-between;
+  }
+
+  .TopThree {
+    justify-content: space-between;
+  }
+  .bottomLeft {
+    text-align: center;
   }
 }
