@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { json, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export const ContexData = React.createContext();
 
@@ -387,37 +388,82 @@ function ContextFunc({ children }) {
 
     // add to basket
     function add_to_basket(item) {
-        if (localStorage.getItem('forLocal')) {
-            localStorage.setItem(
-
-                'forLocal',
-                JSON.stringify([
-                    ...JSON.parse(localStorage.getItem('forLocal')),
-                    { ...item, count: +item.count + 1 }
-                ])
-            )
+        if (forLocal.filter(a => a.id === item.id).length === 0) {
+            if (localStorage.getItem('forLocal')) {
+                localStorage.setItem(
+    
+                    'forLocal',
+                    JSON.stringify([
+                        ...JSON.parse(localStorage.getItem('forLocal')),
+                        { ...item, count: +item.count + 1 }
+                    ])
+                )
+            }
+            else {
+                localStorage.setItem(
+                    'forLocal',
+                    JSON.stringify([{ ...item }])
+                );
+            }
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Added successfully!',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }
         else {
-            localStorage.setItem(
-                'forLocal',
-                JSON.stringify([{ ...item }])
-            );
+            Swal.fire(
+                'Warning!',
+                'Ushbu mahsulot allaqachon korzinkada mavjud!',
+                'info'
+            )
         }
-        basketLink('/basket');
+        // basketLink('/basket');
         refresh();
     }
 
     // delet to basket
     function delete_to_basket(biz) {
-        localStorage.setItem(
-            'forLocal',
-            JSON.stringify(
-                JSON.parse(localStorage.getItem('forLocal')).filter(
-                    (item) => item.id !== biz.id
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
                 )
-            )
-        )
-        refresh()
+                localStorage.setItem(
+                    'forLocal',
+                    JSON.stringify(
+                        JSON.parse(localStorage.getItem('forLocal')).filter(
+                            (item) => item.id !== biz.id
+                        )
+                    )
+                )
+                refresh();
+            }
+            else {
+                localStorage.setItem(
+                    'forLocal',
+                    JSON.stringify(
+                        JSON.parse(localStorage.getItem('forLocal')).map(
+                            (foo) => (foo.id === biz.id && foo.count === 0) ?
+                                { ...foo, count: +foo.count + 1 } : foo
+                        )
+                    )
+                )
+                refresh();
+            }
+        })
     }
 
     // Add to Favorite va Delete Favorite funksiyalari Basket bilan bir xilda shu joyga yoziladi
@@ -425,28 +471,61 @@ function ContextFunc({ children }) {
 
     // add to favorite
     function add_to_favorite(item) {
-        if (localStorage.getItem('forFavorite')) {
-            localStorage.setItem(
+        if (forFavorite.filter(a => a.id === item.id).length === 0) {
+            if (localStorage.getItem('forFavorite')) {
+                localStorage.setItem(
 
-                'forFavorite',
-                JSON.stringify([
-                    ...JSON.parse(localStorage.getItem('forFavorite')),
-                    { ...item, count: +item.count + 1 }
-                ])
-            )
+                    'forFavorite',
+                    JSON.stringify([
+                        ...JSON.parse(localStorage.getItem('forFavorite')),
+                        { ...item, count: +item.count + 1 }
+                    ])
+                )
+            }
+            else {
+                localStorage.setItem(
+                    'forFavorite',
+                    JSON.stringify([{ ...item }])
+                );
+            }
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Added successfully!',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }
         else {
-            localStorage.setItem(
-                'forFavorite',
-                JSON.stringify([{ ...item }])
-            );
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Removed successfully!',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        localStorage.setItem(
+            'forFavorite',
+            JSON.stringify(
+                JSON.parse(localStorage.getItem('forFavorite')).filter(
+                    (b) => b.id !== item.id
+                )
+            )
+        )
         }
-        favoriteLink('/like');
+        // favoriteLink('/like');
         refresh1();
     }
 
     // delet to favorite
     function delete_to_favorite(biz) {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Removed successfully!',
+            showConfirmButton: false,
+            timer: 1500
+        })
         localStorage.setItem(
             'forFavorite',
             JSON.stringify(

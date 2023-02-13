@@ -97,11 +97,30 @@
   padding: 5px;
   outline: none;
 }
-
+.basket {
+  position: relative;
+}
 .basket span {
   color: black;
 }
+#length {
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  width: 12px;
+  height: 12px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  background-color: red;
+}
 
+.items {
+  position: relative;
+}
 .items span {
   color: black;
 }
@@ -1796,6 +1815,15 @@ td {
   padding: 30px 100px;
 }
 
+.HTrBottom1 {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 100px 0px 150px;
+}
+
 
 
 /* paginaidA */
@@ -2094,7 +2122,7 @@ td {
 /* Loader */
 .loaderComp {
   width: 100%;
-  height: 40vh;
+  height: 200px;
   position: absolute;
   display: flex;
   align-items: center;

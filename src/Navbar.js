@@ -1,11 +1,15 @@
 import { Routes, Route, NavLink } from "react-router-dom";
-import { AiFillCaretDown, AiFillCloseCircle, AiOutlineUser } from "react-icons/ai";
+import { AiFillCaretDown, AiFillCloseCircle, AiOutlineHeart, AiOutlineUser } from "react-icons/ai";
 import { SlBasket } from "react-icons/sl";
 import { BiSearch } from "react-icons/bi";
 import { HiMenu } from "react-icons/hi";
 import { useState } from "react";
+import { useContext } from "react";
+import { ContexData } from "./context/ContextDate";
 
 function Navbar() {
+
+    const { forLocal, forFavorite } = useContext(ContexData);
 
     const [chiq, setChiq] = useState(false);
 
@@ -22,8 +26,8 @@ function Navbar() {
                             </NavLink>
                         </button>
                     </div>
-                    <div className="basket"> <NavLink to="/basket"><span><SlBasket /></span></NavLink> </div>
-                    <div className="items"><p> <NavLink to="/like"><span>like </span></NavLink> </p></div>
+                    <div className="basket"><NavLink to="/basket"><span><SlBasket /></span></NavLink><span id="length">{forLocal.length}</span></div>
+                    <div className="items"><NavLink to="/like"><span><AiOutlineHeart /></span></NavLink><span id="length">{forFavorite.length}</span></div>
                 </div>
                 {/* Sidebar */}
                 {
@@ -56,8 +60,7 @@ function Navbar() {
             <div className="navbar">
                 <div className="navTop">
                     <div className="nTopLeft">
-                        <button>EN<p><AiFillCaretDown /></p></button>
-                        <button>USD<p><AiFillCaretDown /></p></button>
+                        <button>USA / RUS</button>
                     </div>
                     <div className="nTopRight">
                         <div className="myProfileLink">
@@ -68,8 +71,8 @@ function Navbar() {
                                 </NavLink>
                             </button>
                         </div>
-                        <div className="basket"> <NavLink to="/basket"><span><SlBasket /></span></NavLink> </div>
-                        <div className="items"><p> <NavLink to="/like"><span>like </span></NavLink> </p></div>
+                        <div className="basket"> <NavLink to="/basket"><span><SlBasket /></span></NavLink><span id="length">{forLocal.length}</span></div>
+                        <div className="items"><NavLink to="/like"><span><AiOutlineHeart /></span></NavLink><span id="length">{forFavorite.length}</span></div>
                         <div className="itogo"><input type="text" placeholder="$0.00" /><button><BiSearch /></button></div>
 
                     </div>

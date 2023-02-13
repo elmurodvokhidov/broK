@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
 import { ContexData } from "../context/ContextDate"
 import { AiFillHome } from "react-icons/ai";
+import Swal from "sweetalert2";
 
 function Add() {
     const { backfunc, yangiP, setYangiP, yangiRef } = useContext(ContexData);
@@ -50,6 +51,13 @@ function Add() {
             )
 
         }
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Added successfully!',
+            showConfirmButton: false,
+            timer: 1500
+        })
         // console.log(inputData);
         setInputData({
             count: '',
