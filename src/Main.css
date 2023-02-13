@@ -590,8 +590,8 @@
   right: 0px;
   bottom: 0;
 }
-.HomeFour .right img
-{
+
+.HomeFour .right img {
   width: 794.56px;
 }
 
@@ -2286,8 +2286,7 @@ td {
 
 
   /* Products */
-  .tOneLeft h1
-  {
+  .tOneLeft h1 {
     font-size: 25px;
   }
 }
@@ -2295,3 +2294,248 @@ td {
 /* for my little brother :) */
 
 /* media (768px) */
+@media (max-width: 769px) {
+  .navbar {
+    display: none;
+  }
+
+  .mediaNavbar {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px 50px;
+    border-bottom: 1.5px solid #ebf0ff;
+    /* transition: .5s ease-in; */
+    background-color: white;
+  }
+
+  .hamburger {
+    border: none;
+    background-color: #22262a00;
+  }
+
+  .mediaNavbar .itogo {
+    width: 50%;
+    border: 2px solid #ebf0ff;
+  }
+
+  .mediaNavbar .itogo input {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background-color: #22262a00;
+  }
+
+  .mediaNavbar .itogo button {
+    border: none;
+    background-color: #22262a00;
+  }
+
+  .mediaNavbar .myProfileLink button {
+    border: none;
+    background-color: #22262a00;
+  }
+
+  .mediaNavbar button {
+    font-size: 22px;
+  }
+
+  .mediaNavbar .nTopRight {
+    display: flex;
+    align-items: center;
+  }
+
+  .mediaNavbar .nTopRight a {
+    font-size: 22px;
+  }
+
+  .HomeOne {
+    padding: 130px 50px 370px;
+    margin-top: 70px;
+    height: 0px;
+    background-image: url(/public/img/HPnebg1.png);
+    background-size: contain;
+  }
+
+  .textHOne h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .taymer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .taymer span {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+  }
+
+  .soat {
+    padding: 12px 18px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #223263;
+  }
+
+  .HomeThree {
+    padding: 30px 50px 120px;
+  }
+
+  .HTrBottom {
+    grid-template-columns: repeat(2, 50%);
+    gap: 35px;
+  }
+
+  .BCAOne {
+    padding: 0;
+    border: 3px solid #f6f7f8;
+    border-radius: 5px;
+  }
+
+  .BCAOne .rasmBCAOne img {
+    width: 100%;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0);
+  }
+
+  .siderbarCont {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: silver;
+  }
+
+  .sidebarTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebarTop .nBottomLeft {
+    gap: 10px;
+  }
+
+  .chiqish {
+    border: none;
+    color: red;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .sidebarCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    gap: 25px;
+  }
+
+  .sidebarCenter a {
+    color: black;
+  }
+
+  .sidebarBottom p {
+    color: rgba(0, 0, 0, 0.532);
+  }
+
+  /* <<<<<<<< Bularni keyinchalik o'chirib tashlang, scroll bo'lib qolganligi uchun
+      vaqtinchalik 'display: none' qilib qo'ygandim! >>>>>>>>>>
+  */
+  .HomeFour {
+    display: none;
+  }
+
+  .HomeFive {
+    display: none;
+  }
+
+  .Footer {
+    display: none;
+  }
+
+  /*BAGS */
+  .Bags {
+    margin-top: 120px;
+    padding: 50px 50px 30px;
+  }
+
+  .Bags .goodsInTheBags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .gIBTitle {
+    font-size: 35px;
+  }
+
+  .Bags .goodsInTheBags .A {
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+  }
+
+  /* SNEAKERS */
+  .sneakers {
+    margin-top: 120px;
+    padding: 50px 50px 30px;
+  }
+
+  .cardsInSneakers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardInSneakers {
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+
+  }
+
+  /* BELT */
+  .belt {
+    margin-top: 120px;
+    padding: 50px 50px 30px;
+  }
+
+  /* CONTACT */
+  .Contact .contactLeft {
+    display: none;
+  }
+
+  .Contact .Top {
+    gap: 0px;
+    padding: 0px;
+    justify-content: center;
+  }
+}
