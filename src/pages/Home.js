@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { BasicRating } from "../layouts/StarRating";
 import { AiOutlineHeart } from "react-icons/ai/";
 import { SlBasket } from "react-icons/sl/";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ContexData } from "../context/ContextDate";
 import { AiOutlineEye } from "react-icons/ai/"
 import Navbar from "../Navbar";
@@ -11,6 +11,22 @@ import Footer from "../Footer";
 function Home() {
 
     const { bestSeller, bestSeller1, basketFunk, eyeFunc, add_to_favorite, add_to_basket } = useContext(ContexData);
+
+    const [taymer, setTaymer] = useState([]);
+
+    function taymerFunk() {
+        setTaymer([{
+            hour: `${new Date().getHours()}`,
+            minute: `${new Date().getMinutes()}`,
+            seconds: `${new Date().getSeconds()}`
+        }])
+    }
+
+    useEffect(() => {
+        setInterval(() => {
+            taymerFunk();
+        }, 1000);
+    }, []);
 
     return (
         <>
@@ -23,6 +39,17 @@ function Home() {
                             50% Off
                         </h1>
                     </div>
+                        {
+                            taymer.map((a, b) => (
+                                <div className="taymer" key={b}>
+                                    <div className="soat">{a.hour < 10 ? '0' + a.hour : a.hour}</div>
+                                    <span>:</span>
+                                    <div className="soat minut">{a.minute < 10 ? '0' + a.minute : a.minute}</div>
+                                    <span>:</span>
+                                    <div className="soat sekund">{a.seconds < 10 ? '0' + a.seconds : a.seconds}</div>
+                                </div>
+                            ))
+                        }
                 </section>
 
 
@@ -95,37 +122,37 @@ function Home() {
                         </div>
                     </div>
                     <div className="obshiyCard">
-                    <div className="HTrBottom">
-                        {
-                            bestSeller.map(val => (
-                                <div className="BCAOne" key={val.id}>
-                                    <div className="rasmBCAOne">
-                                        <div className="modal">
-                                            <div className="icons">
-                                                <button className="iconBtn" onClick={() => add_to_favorite(val)}> <span><AiOutlineHeart /></span></button>
-                                                <button className="iconBtn" onClick={() => add_to_basket(val)}><span><SlBasket /></span></button>
-                                                <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye /></span></button>
+                        <div className="HTrBottom">
+                            {
+                                bestSeller.map(val => (
+                                    <div className="BCAOne" key={val.id}>
+                                        <div className="rasmBCAOne">
+                                            <div className="modal">
+                                                <div className="icons">
+                                                    <button className="iconBtn" onClick={() => add_to_favorite(val)}> <span><AiOutlineHeart /></span></button>
+                                                    <button className="iconBtn" onClick={() => add_to_basket(val)}><span><SlBasket /></span></button>
+                                                    <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye /></span></button>
+                                                </div>
+                                            </div>
+                                            <figure><img src={val.img} alt={val.img} /></figure>
+                                        </div>
+                                        <div className="text">
+                                            <p>{val.title}</p>
+                                            <div className="starUchun">
+                                                <BasicRating />
+                                            </div>
+                                            <div className="alohida">
+                                                <h1>${val.price}</h1>
+                                                <p>${val.prev}</p>
+                                                <h3>{val.skidka}% Off</h3>
                                             </div>
                                         </div>
-                                        <figure><img src={val.img} alt={val.img} /></figure>
                                     </div>
-                                    <div className="text">
-                                        <p>{val.title}</p>
-                                        <div className="starUchun">
-                                            <BasicRating />
-                                        </div>
-                                        <div className="alohida">
-                                            <h1>${val.price}</h1>
-                                            <p>${val.prev}</p>
-                                            <h3>{val.skidka}% Off</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        }
+                                ))
+                            }
 
-                    </div>
-                    {/* <div className="HTrBottom1">
+                        </div>
+                        {/* <div className="HTrBottom1">
                         {
                             bestSeller1.map((val, index) => (
                                 <div className="BCAOne" key={index}>

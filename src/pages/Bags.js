@@ -14,15 +14,8 @@ function Bags() {
             <Navbar />
             <div className="Bags">
                 <section className="BagsOne">
-                    {/* <div className="B_O_top">
-                        <div className="textBOne">
-                            <h1>
-                                Super Flash Sale <br />
-                                50% Off
-                            </h1>
-                        </div>
-                    </div> */}
                     <div className="goodsInTheBags">
+                        <h1 className="gIBTitle">Bags</h1>
                         <div className="A">
                             {
                                 bags.map(val => (
