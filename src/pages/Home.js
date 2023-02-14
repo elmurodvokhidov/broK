@@ -39,17 +39,17 @@ function Home() {
                             50% Off
                         </h1>
                     </div>
-                        {
-                            taymer.map((a, b) => (
-                                <div className="taymer" key={b}>
-                                    <div className="soat">{a.hour < 10 ? '0' + a.hour : a.hour}</div>
-                                    <span>:</span>
-                                    <div className="soat minut">{a.minute < 10 ? '0' + a.minute : a.minute}</div>
-                                    <span>:</span>
-                                    <div className="soat sekund">{a.seconds < 10 ? '0' + a.seconds : a.seconds}</div>
-                                </div>
-                            ))
-                        }
+                    {
+                        taymer.map((a, b) => (
+                            <div className="taymer" key={b}>
+                                <div className="soat">{a.hour < 10 ? '0' + a.hour : a.hour}</div>
+                                <span>:</span>
+                                <div className="soat minut">{a.minute < 10 ? '0' + a.minute : a.minute}</div>
+                                <span>:</span>
+                                <div className="soat sekund">{a.seconds < 10 ? '0' + a.seconds : a.seconds}</div>
+                            </div>
+                        ))
+                    }
                 </section>
 
 
@@ -199,6 +199,11 @@ function Home() {
                         <img src="./img/HFour-right.png" alt="" />
                     </div>
                 </section>
+
+                {/* Phone screen only */}
+                <div className="megaSale">
+                    <h1>Get a 50% discount by entering the <b>'NewYear'</b> promo code</h1>
+                </div>
 
 
                 <section className="HomeFive">

@@ -1820,6 +1820,7 @@ td {
 }
 
 .HTrBottom1 {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 20%);
   align-items: center;
@@ -2179,6 +2180,35 @@ td {
   display: none;
 }
 
+.HTrBottom1 h2 {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+/* MegaSale */
+
+.megaSale {
+  width: 100%;
+  height: 400px;
+  display: none;
+  background-image: url('../public/img/promoCode.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 80px 50px;
+  margin: 0px 0px 80px;
+}
+
+.megaSale h1 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
 
 /* media (1024px) */
 
@@ -2512,12 +2542,9 @@ td {
     display: none;
   }
 
-  .HomeFive {
-    display: none;
-  }
-
-  .Footer {
-    display: none;
+  /* MegaSale */
+  .megaSale {
+    display: block;
   }
 
   /*BAGS */
@@ -2633,7 +2660,41 @@ td {
   .TopThree {
     justify-content: space-between;
   }
+
   .bottomLeft {
     text-align: center;
+  }
+
+  /* FOOTER */
+  .Footer {
+    padding: 100px 50px 30px;
+  }
+
+  .fTopC {
+    display: none;
+  }
+
+  .fCenterA:last-child {
+    display: none;
+  }
+
+  /* HomeFive */
+  .HomeFive {
+    padding: 80px 50px 100px;
+  }
+
+  .HomeFive .Cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .HomeFive .bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fPbottomCard {
+    width: 100%;
+  }
+  .fPbottomCard .right {
+    flex-direction: row;
   }
 }

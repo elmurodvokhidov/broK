@@ -14,35 +14,9 @@ export function Favorite() {
             <Navbar />
             <div className="favorite">
                 <div className="favoriteCards">
-                    {/* {
-                            forFavorite.map(val => (
-                                <div className="favoriteCard">
-                                    <div className="rasmFavorite">
-                                        <div className="modal">
-                                            <div className="icons">
-                                                <button className="iconBtn" onClick={() => delete_to_favorite(val)}><span><FcLike /></span></button>
-                                                <button className="iconBtn" onClick={basketFunk}><span><SlBasket /></span></button>
-                                                <button className="iconBtn" onClick={eyeFunc}><span><AiOutlineEye/></span></button>
-                                            </div>
-                                        </div>
-                                        <figure><img src={val.img} alt={val.img} /></figure>
-                                    </div>
-                                    <div className="text">
-                                        <p>{val.title}</p>
-                                        <div className="starUchun">
-                                            <BasicRating />
-                                        </div>
-                                        <div className="alohida">
-                                            <h1>{val.price}</h1>
-                                            <p>{val.prev}</p>
-                                            <h3>{val.skidka}</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        } */}
                     <div className="HTrBottom1">
                         {
+                            forFavorite.length > 0 ?
                             forFavorite.map(val => (
                                 <div className="BCAOne">
                                     <div className="rasmBCAOne">
@@ -67,7 +41,7 @@ export function Favorite() {
                                         </div>
                                     </div>
                                 </div>
-                            ))
+                            )) : <h2>Ma'lumot topilmadi!</h2>
                         }
                     </div>
                 </div>
