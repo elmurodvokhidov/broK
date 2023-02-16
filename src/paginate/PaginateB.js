@@ -67,7 +67,14 @@ export function PaginateND() {
                                 }
                             }).map(val => (
                                 <div className="bottomTwoCardA" key={val.id}>
-                                    <div className="left"><img src={val.img} alt={val.title} /></div>
+                                    <div className="left">
+                                        {
+                                            val.img !== '' ?
+                                                <img src={val.img} alt={val.title} />
+                                                :
+                                                <img src="https://static.vecteezy.com/system/resources/thumbnails/004/141/669/small/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg" alt="noImage" />
+                                    }
+                                    </div>
                                     <div className="right">
                                         <h1>{val.title}</h1>
                                         <div className="rightTop">

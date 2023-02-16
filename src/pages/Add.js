@@ -9,7 +9,7 @@ function Add() {
     const [inputData, setInputData] = useState({
         count: '',
         id: '',
-        photo: '',
+        img: '',
         title: '',
         price: '',
         about: '',
@@ -29,7 +29,7 @@ function Add() {
     function photoFunc(e) {
         setInputData({
             ...inputData,
-            photo: URL.createObjectURL(e.target.files[0])
+            img: URL.createObjectURL(e.target.files[0])
         })
     }
 
@@ -61,7 +61,7 @@ function Add() {
         // console.log(inputData);
         setInputData({
             count: '',
-            photo: '',
+            img: '',
             title: '',
             price: '',
             about: '',
@@ -115,7 +115,7 @@ function Add() {
                                 </div>
                             </div>
 
-                            <input type="file" onInput={(e) => photoFunc(e)} id='photo' name='photo' />
+                            <input type="file" onInput={(e) => photoFunc(e)} id='photo' name='img' />
 
                             <button onClick={Add} type="Submit">Submit</button>
                         </form>

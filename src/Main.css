@@ -1880,26 +1880,18 @@ td {
 
 .pricesinA h3 {
   font-family: 'Poppins';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 180%;
-  /* identical to box height, or 36px */
-
   letter-spacing: 0.5px;
-
-  /* Primary/Blue */
-
   color: #40BFFF;
 }
 
 .aboutinBottom-Two span {
   font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-
   color: #262626;
 }
 
@@ -1922,9 +1914,6 @@ td {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
-
-
   color: #33A0FF;
 }
 
@@ -2687,14 +2676,109 @@ td {
     flex-direction: column;
     gap: 50px;
   }
+
   .HomeFive .bottom {
     flex-direction: column;
     justify-content: center;
   }
+
   .fPbottomCard {
     width: 100%;
   }
+
   .fPbottomCard .right {
     flex-direction: row;
+  }
+
+  .Product {
+    padding: 100px 50px;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .Product .topOne {
+    display: none;
+  }
+
+  .oneLeft {
+    width: 100%;
+  }
+
+  .oneRight {
+    width: 100%;
+  }
+
+  /* Paginate */
+  .paginateWrapper1 {
+    grid-template-columns: repeat(2, 45%);
+  }
+
+  /* Paginate B */
+  .paginateWrapper2 {
+    padding: 0;
+    gap: 50px;
+  }
+
+  .bottomTwoCardA {
+    width: 100%;
+  }
+
+  .bottomTwoCardA .rightTop {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .bottomTwoCardA .rightTop span:first-child {
+    font-size: 20px;
+  }
+
+  .bottomTwoCardA .right hr {
+    width: 100%;
+  }
+
+  .bottomTwoCardA .right h1 {
+    font-size: 25px;
+  }
+
+  #n_1R-T {
+    font-size: 12px;
+  }
+
+  #n_2R-T {
+    font-size: 12px;
+  }
+
+  .pricesinA h3 {
+    font-size: 15px;
+  }
+  
+  .pricesinA span {
+    font-size: 12px;
+  }
+  
+  .pricesinA p {
+    font-size: 12px;
+  }
+  
+  .pricesinA {
+    justify-content: flex-start;
+  }
+
+  .aboutinBottom-Two span {
+    font-size: 12px;
+  }
+
+  .rightBottom2 {
+    padding-top: 30px;
+    gap: 10px;
+  }
+  
+  .rightBottom2 button span {
+    font-size: 15px;
+  }
+  
+  .rightBottom2 button {
+    font-size: 12px;
   }
 }
