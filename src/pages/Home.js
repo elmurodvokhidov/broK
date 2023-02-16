@@ -202,7 +202,7 @@ function Home() {
 
                 {/* Phone screen only */}
                 <div className="megaSale">
-                    <h1>Get a 50% discount by entering the <b>'NewYear'</b> promo code</h1>
+                    <h1>Get a 50% discount by entering the <b>'MEGSL'</b> promo code</h1>
                 </div>
 
 

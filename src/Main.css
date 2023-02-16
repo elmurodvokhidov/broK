@@ -2690,6 +2690,10 @@ td {
     flex-direction: row;
   }
 
+  .fPbottomCard .left {
+    width: 20%;
+  }
+
   .Product {
     padding: 100px 50px;
     flex-direction: column;
@@ -2752,15 +2756,15 @@ td {
   .pricesinA h3 {
     font-size: 15px;
   }
-  
+
   .pricesinA span {
     font-size: 12px;
   }
-  
+
   .pricesinA p {
     font-size: 12px;
   }
-  
+
   .pricesinA {
     justify-content: flex-start;
   }
@@ -2773,12 +2777,36 @@ td {
     padding-top: 30px;
     gap: 10px;
   }
-  
+
   .rightBottom2 button span {
     font-size: 15px;
   }
-  
+
   .rightBottom2 button {
     font-size: 12px;
+  }
+
+  .modalChild {
+    width: 100%;
+  }
+
+  .pMC_box {
+    width: 100%;
+  }
+
+  /* Modal window 2 */
+  .pMC_box2 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pMCB2L_inp {
+    justify-content: space-between;
+  }
+
+  .modalOyna {
+    padding: 100px 50px;
   }
 }
