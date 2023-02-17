@@ -2332,6 +2332,7 @@ td {
   .cardsInSneakers {
     display: flex;
     flex-direction: column;
+    gap: 50px;
   }
 
   .cardInSneakers {
@@ -2350,8 +2351,8 @@ td {
 
 /* for my little brother :) */
 
-/* media (768px) */
-@media (max-width: 769px) {
+/* media (800px) */
+@media (max-width: 801px) {
   .navbar {
     display: none;
   }
@@ -2808,5 +2809,53 @@ td {
 
   .modalOyna {
     padding: 100px 50px;
+  }
+}
+
+/* media (700px) */
+@media (max-width: 701px) {
+  .mediaNavbar {
+    padding: 18px 45px;
+  }
+
+  .HomeOne {
+    padding: 130px 45px 370px;
+  }
+
+  .textHOne h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+
+  .soat {
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 145%;
+  }
+
+  .HomeThree {
+    padding: 30px 45px 120px;
+  }
+
+  .BCAOne {
+    height: 365px;
+    width: 278px;
+    border-radius: 0px;
+  }
+
+  .HTrBottom {
+    justify-content: center;
+  }
+  /* MegaSale */
+  
+  .megaSale {
+    height: 400px;
+    padding: 90px 50px 50px;
+    margin: 0px 0px 80px;
+  }
+  
+  .megaSale h1 {
+    font-size: 33px;
+    line-height: 145%;
   }
 }
