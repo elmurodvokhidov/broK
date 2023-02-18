@@ -2198,6 +2198,10 @@ td {
   color: #FFFFFF;
 }
 
+.priceMobile {
+  display: none;
+}
+
 
 /* media (1024px) */
 
@@ -3079,7 +3083,7 @@ td {
     padding: 5px 12px;
     border-radius: 20px;
   }
-  
+
   .centerTop h1 {
     font-size: 28px;
   }
@@ -3087,7 +3091,7 @@ td {
   .centerLI {
     gap: 30px;
   }
-  
+
   .centerLI input {
     padding: 6px;
     font-size: 13px;
@@ -3096,8 +3100,79 @@ td {
   .inputUchun label {
     font-size: 12px;
   }
-  
+
   .bottomLI button {
     padding: 8px 25px;
+  }
+}
+
+/* media (450px) */
+@media (max-width: 451px) {
+  .mediaNavbar {
+    padding: 16px 30px;
+  }
+
+  .HomeOne {
+    padding: 70px 30px 300px;
+  }
+
+  .textHOne h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .soat {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .HTrTtext h1 {
+    font-size: 28px;
+  }
+
+  .HomeThree {
+    padding: 30px 30px 100px;
+  }
+
+  .HTrBottom {
+    grid-template-columns: repeat(1, 100%);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .BCAOne {
+    margin: 0 auto;
+  }
+
+  .sidebarBottom p {
+    font-size: 10px;
+  }
+
+  .priceMobile {
+    display: block;
+  }
+
+  .fPbottomCard .price {
+    display: none;
+  }
+
+  .fPbottomCard .priceMobile {
+    display: flex;
+    gap: 10px;
+  }
+
+  .fPbottomCard .priceMobile span:first-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FF4858;
+  }
+
+  .fPbottomCard .priceMobile span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #C1C8CE;
   }
 }

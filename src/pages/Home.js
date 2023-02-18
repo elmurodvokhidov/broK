@@ -268,6 +268,10 @@ function Home() {
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
                                         <BasicRating />
+                                        <div className="priceMobile">
+                                            <span>$499</span>
+                                            <span>$599</span>
+                                        </div>
                                     </div>
                                     <div className="price">
                                         <span>$499</span>
@@ -281,6 +285,10 @@ function Home() {
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
                                         <BasicRating />
+                                        <div className="priceMobile">
+                                            <span>$499</span>
+                                            <span>$599</span>
+                                        </div>
                                     </div>
                                     <div className="price">
                                         <span>$499</span>
@@ -294,6 +302,10 @@ function Home() {
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
                                         <BasicRating />
+                                        <div className="priceMobile">
+                                            <span>$499</span>
+                                            <span>$599</span>
+                                        </div>
                                     </div>
                                     <div className="price">
                                         <span>$499</span>
