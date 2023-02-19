@@ -446,6 +446,9 @@
   height: 385px;
   width: 298px;
   border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .BCAOne .text {
@@ -1353,6 +1356,7 @@ td {
 .bottomLeft input {
   padding: 18px 19px 16px 140px;
   border: 1px solid silver;
+  outline: none;
 }
 
 .bottomLeft button {
@@ -2583,7 +2587,6 @@ td {
   .cardInSneakers {
     grid-template-columns: repeat(2, 50%);
     gap: 20px;
-
   }
 
   /* BELT */
@@ -2900,8 +2903,8 @@ td {
   }
 
   .BCAOne {
-    height: 335px;
     width: 248px;
+    height: 335px;
     border-radius: 0px;
   }
 
@@ -3174,5 +3177,207 @@ td {
     font-size: 14px;
     line-height: 24px;
     color: #C1C8CE;
+  }
+
+  .footerTop {
+    gap: 50px;
+  }
+
+  .fCenterA span {
+    font-size: 12px;
+  }
+
+  /*BAGS */
+  .Bags {
+    padding: 50px 40px 100px;
+  }
+
+  .gIBTitle {
+    font-size: 30px;
+  }
+
+  .Bags .goodsInTheBags .A {
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+  }
+
+  .Bags .goodsInTheBags .BCAOne {
+    height: 370px;
+  }
+
+  /* SNEAKERS */
+  .sneakers {
+    padding: 50px 40px 100px;
+  }
+
+  .cardInSneakers {
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+  }
+
+  .cardInSneakers .BCAOne {
+    height: 370px;
+  }
+
+  /* BELT */
+  .belt {
+    padding: 50px 40px 100px;
+  }
+
+  /* MyProfie || Login */
+
+  .logIn {
+    width: 70%;
+  }
+
+  .crud .crud_home {
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
+
+  .crud h1 {
+    font-size: 25px;
+  }
+
+  .add form {
+    gap: 15px;
+  }
+
+  .add form input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .add form button {
+    padding: 10px 80px;
+  }
+
+  .selectOne {
+    gap: 2px;
+  }
+
+  .selectOne select {
+    padding: 5px;
+  }
+
+  .modal {
+    top: 12px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  .iconBtn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .iconBtn span {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* Basket table */
+
+  .Basket {
+    padding: 150px 40px 100px;
+
+  }
+
+  .Basket .Top table {
+    width: 200%;
+  }
+
+  th {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  td {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .Basket table th:last-child {
+    width: 100px;
+  }
+
+  .bottomLeft input {
+    padding: 15px;
+    border: 1px solid silver;
+  }
+
+  .bottomLeft button {
+    padding: 16px 21px 16px 14px;
+  }
+
+  .topOneA span {
+    font-size: 15px;
+  }
+
+  .topOneA p {
+    font-size: 15px;
+  }
+
+  .topTwo span {
+    font-size: 15px;
+  }
+
+  .topTwo p {
+    font-size: 15px;
+  }
+
+  .TopThree span {
+    font-size: 15px;
+  }
+
+  .TopThree p {
+    font-size: 15px;
+  }
+
+  .bottomBottom button {
+    padding: 15px 0px;
+  }
+
+  .bottomOne h1 {
+    font-size: 25px;
+  }
+
+  .favorite {
+    padding: 30px 40px;
+  }
+
+  .HTrBottom1 {
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+  }
+
+  .Product {
+    padding: 100px 40px;
+  }
+
+  /* Paginate */
+  .paginateWrapper1 {
+    grid-template-columns: repeat(1, 75%);
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .bottomOneCard {
+    height: 370px;
+  }
+
+  .pricesinA {
+    justify-content: center;
+  }
+
+  .centerOne .right {
+    display: none;
+  }
+
+  .centerOne .left {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
 }
