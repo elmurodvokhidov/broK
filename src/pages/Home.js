@@ -202,7 +202,7 @@ function Home() {
 
                 {/* Phone screen only */}
                 <div className="megaSale">
-                    <h1>Get a 50% discount by entering the <b>'NewYear'</b> promo code</h1>
+                    <h1>Get a 50% discount by entering the <b>'MEGSL'</b> promo code</h1>
                 </div>
 
 
@@ -268,6 +268,10 @@ function Home() {
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
                                         <BasicRating />
+                                        <div className="priceMobile">
+                                            <span>$499</span>
+                                            <span>$599</span>
+                                        </div>
                                     </div>
                                     <div className="price">
                                         <span>$499</span>
@@ -281,6 +285,10 @@ function Home() {
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
                                         <BasicRating />
+                                        <div className="priceMobile">
+                                            <span>$499</span>
+                                            <span>$599</span>
+                                        </div>
                                     </div>
                                     <div className="price">
                                         <span>$499</span>
@@ -294,6 +302,10 @@ function Home() {
                                     <p>Blue Swade Nike Sneakers</p>
                                     <div className="starUchun">
                                         <BasicRating />
+                                        <div className="priceMobile">
+                                            <span>$499</span>
+                                            <span>$599</span>
+                                        </div>
                                     </div>
                                     <div className="price">
                                         <span>$499</span>

@@ -446,6 +446,9 @@
   height: 385px;
   width: 298px;
   border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .BCAOne .text {
@@ -1353,6 +1356,7 @@ td {
 .bottomLeft input {
   padding: 18px 19px 16px 140px;
   border: 1px solid silver;
+  outline: none;
 }
 
 .bottomLeft button {
@@ -2198,6 +2202,10 @@ td {
   color: #FFFFFF;
 }
 
+.priceMobile {
+  display: none;
+}
+
 
 /* media (1024px) */
 
@@ -2332,6 +2340,7 @@ td {
   .cardsInSneakers {
     display: flex;
     flex-direction: column;
+    gap: 50px;
   }
 
   .cardInSneakers {
@@ -2376,8 +2385,13 @@ td {
  */
 /* for my little brother :) */
 
-/* media (768px) */
-@media (max-width: 769px) {
+/* media (800px) */
+@media (max-width: 801px) {
+
+  .Contact .Top:hover {
+    box-shadow: none;
+  }
+
   .navbar {
     display: none;
   }
@@ -2599,7 +2613,6 @@ td {
   .cardInSneakers {
     grid-template-columns: repeat(2, 50%);
     gap: 20px;
-
   }
 
   /* BELT */
@@ -2716,6 +2729,10 @@ td {
     flex-direction: row;
   }
 
+  .fPbottomCard .left {
+    width: 20%;
+  }
+
   .Product {
     padding: 100px 50px;
     flex-direction: column;
@@ -2806,5 +2823,587 @@ td {
 
   .rightBottom2 button {
     font-size: 12px;
+  }
+
+  .modalChild {
+    width: 100%;
+  }
+
+  .pMC_box {
+    width: 100%;
+  }
+
+  /* Modal window 2 */
+  .pMC_box2 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pMCB2L_inp {
+    justify-content: space-between;
+  }
+
+  .modalOyna {
+    padding: 100px 50px;
+  }
+}
+
+/* media (700px) */
+@media (max-width: 701px) {
+  .mediaNavbar {
+    padding: 18px 45px;
+  }
+
+  .HomeOne {
+    padding: 130px 45px 370px;
+  }
+
+  .textHOne h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+
+  .soat {
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 145%;
+  }
+
+  .HomeThree {
+    padding: 30px 45px 120px;
+  }
+
+  .BCAOne {
+    height: 365px;
+    width: 278px;
+    border-radius: 0px;
+  }
+
+  .HTrBottom {
+    justify-content: center;
+  }
+
+  /* MegaSale */
+
+  .megaSale {
+    height: 400px;
+    padding: 90px 50px 50px;
+    margin: 0px 0px 80px;
+  }
+
+  .megaSale h1 {
+    font-size: 33px;
+    line-height: 145%;
+  }
+}
+
+/* media (600px) */
+@media (max-width: 601px) {
+  .mediaNavbar {
+    padding: 16px 40px;
+  }
+
+  .HomeOne {
+    padding: 90px 40px 350px;
+  }
+
+  .textHOne h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .soat {
+    padding: 8px 12px;
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  .HTrTtext h1 {
+    font-size: 30px;
+  }
+
+  .HomeThree {
+    padding: 30px 40px 100px;
+  }
+
+  .BCAOne {
+    width: 248px;
+    height: 335px;
+    border-radius: 0px;
+  }
+
+  .BCAOne .text p {
+    font-size: 12px;
+  }
+
+  .BCAOne .text p:first-child {
+    font-size: 16px;
+  }
+
+  .alohida h1 {
+    font-size: 15px;
+  }
+
+  .BCAOne .starUchun span {
+    font-size: 20px;
+  }
+
+  /* MegaSale */
+
+  .megaSale {
+    height: 300px;
+    padding: 90px 40px 50px;
+    margin: 0px 0px 80px;
+  }
+
+  .megaSale h1 {
+    font-size: 25px;
+    line-height: 140%;
+  }
+
+  /* FOOTER */
+  .Footer {
+    padding: 80px 40px 25px;
+  }
+
+  .footerTop {
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .footerCenter {
+    padding: 50px 0px;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .searchInHome {
+    padding-top: 130px;
+  }
+
+  .searchInHome input {
+    width: 350px;
+    font-size: 16px;
+    padding: 18px 16px;
+    outline: none;
+  }
+
+  .searchInHome button {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+
+  .fPbottomCard {
+    width: 100%;
+  }
+
+  .fPbottomCard .right {
+    justify-content: space-between;
+  }
+
+  .fPbottomCard .right p {
+    font-size: 16px;
+  }
+
+  .fPbottomCard .price span:first-child {
+    font-size: 16px;
+  }
+
+  .fPbottomCard .price span {
+    font-size: 16px;
+  }
+
+  .HFiveCardB {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .HFiveCardB .left {
+    padding-top: 30px;
+  }
+
+  .HFiveCardB .right p {
+    font-size: 14px;
+  }
+
+  .HFiveCardB .right h3 {
+    font-size: 16px;
+  }
+
+  .HFiveCardB .right span {
+    font-size: 14px;
+  }
+
+  .latestNews .top h1 {
+    font-size: 28px;
+  }
+
+  /* HomeFive */
+  .HFiveCardA {
+    width: 300px;
+    padding: 50px 0px;
+    gap: 20px;
+  }
+
+  .HomeFive .Cards {
+    gap: 20px;
+  }
+
+  .HFiveCardA .img {
+    padding: 0px;
+  }
+
+  .HFiveCardA .text h1 {
+    font-size: 22px;
+  }
+
+  .HFiveCardA .text span {
+    font-size: 15px;
+  }
+
+  .sidebarCenter {
+    font-size: 22px;
+  }
+
+  .sidebarBottom p {
+    font-size: 14px;
+  }
+
+  .mediaNavbar .itogo input {
+    font-size: 15px;
+  }
+
+  .mediaNavbar .itogo button {
+    font-size: 18px;
+  }
+
+  .mediaNavbar .nTopRight a {
+    font-size: 18px;
+  }
+
+  /* contact */
+  .Contact {
+    padding: 120px 40px;
+  }
+
+  .contactRight {
+    width: 100%;
+  }
+
+  .contactRight span {
+    font-size: 12px;
+  }
+
+  .contactRight input {
+    width: 100%;
+    padding: 15px 12px;
+    font-size: 12px;
+  }
+
+  /* MyProfie || Login */
+
+  .logIn {
+    width: 55%;
+  }
+
+  .leftTop button {
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+
+  .centerTop h1 {
+    font-size: 28px;
+  }
+
+  .centerLI {
+    gap: 30px;
+  }
+
+  .centerLI input {
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .inputUchun label {
+    font-size: 12px;
+  }
+
+  .bottomLI button {
+    padding: 8px 25px;
+  }
+}
+
+/* media (450px) */
+@media (max-width: 451px) {
+  .mediaNavbar {
+    padding: 16px 30px;
+  }
+
+  .HomeOne {
+    padding: 70px 30px 300px;
+  }
+
+  .textHOne h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .soat {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .HTrTtext h1 {
+    font-size: 28px;
+  }
+
+  .HomeThree {
+    padding: 30px 30px 100px;
+  }
+
+  .HTrBottom {
+    grid-template-columns: repeat(1, 100%);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .BCAOne {
+    margin: 0 auto;
+  }
+
+  .sidebarBottom p {
+    font-size: 10px;
+  }
+
+  .priceMobile {
+    display: block;
+  }
+
+  .fPbottomCard .price {
+    display: none;
+  }
+
+  .fPbottomCard .priceMobile {
+    display: flex;
+    gap: 10px;
+  }
+
+  .fPbottomCard .priceMobile span:first-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FF4858;
+  }
+
+  .fPbottomCard .priceMobile span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #C1C8CE;
+  }
+
+  .footerTop {
+    gap: 50px;
+  }
+
+  .fCenterA span {
+    font-size: 12px;
+  }
+
+  /*BAGS */
+  .Bags {
+    padding: 50px 40px 100px;
+  }
+
+  .gIBTitle {
+    font-size: 30px;
+  }
+
+  .Bags .goodsInTheBags .A {
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+  }
+
+  .Bags .goodsInTheBags .BCAOne {
+    height: 370px;
+  }
+
+  /* SNEAKERS */
+  .sneakers {
+    padding: 50px 40px 100px;
+  }
+
+  .cardInSneakers {
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+  }
+
+  .cardInSneakers .BCAOne {
+    height: 370px;
+  }
+
+  /* BELT */
+  .belt {
+    padding: 50px 40px 100px;
+  }
+
+  /* MyProfie || Login */
+
+  .logIn {
+    width: 70%;
+  }
+
+  .crud .crud_home {
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
+
+  .crud h1 {
+    font-size: 25px;
+  }
+
+  .add form {
+    gap: 15px;
+  }
+
+  .add form input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .add form button {
+    padding: 10px 80px;
+  }
+
+  .selectOne {
+    gap: 2px;
+  }
+
+  .selectOne select {
+    padding: 5px;
+  }
+
+  .modal {
+    top: 12px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  .iconBtn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .iconBtn span {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* Basket table */
+
+  .Basket {
+    padding: 150px 40px 100px;
+
+  }
+
+  .Basket .Top table {
+    width: 200%;
+  }
+
+  th {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  td {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .Basket table th:last-child {
+    width: 100px;
+  }
+
+  .bottomLeft input {
+    padding: 15px;
+    border: 1px solid silver;
+  }
+
+  .bottomLeft button {
+    padding: 16px 21px 16px 14px;
+  }
+
+  .topOneA span {
+    font-size: 15px;
+  }
+
+  .topOneA p {
+    font-size: 15px;
+  }
+
+  .topTwo span {
+    font-size: 15px;
+  }
+
+  .topTwo p {
+    font-size: 15px;
+  }
+
+  .TopThree span {
+    font-size: 15px;
+  }
+
+  .TopThree p {
+    font-size: 15px;
+  }
+
+  .bottomBottom button {
+    padding: 15px 0px;
+  }
+
+  .bottomOne h1 {
+    font-size: 25px;
+  }
+
+  .favorite {
+    padding: 30px 40px;
+  }
+
+  .HTrBottom1 {
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+  }
+
+  .Product {
+    padding: 100px 40px;
+  }
+
+  /* Paginate */
+  .paginateWrapper1 {
+    grid-template-columns: repeat(1, 75%);
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .bottomOneCard {
+    height: 370px;
+  }
+
+  .pricesinA {
+    justify-content: center;
+  }
+
+  .centerOne .right {
+    display: none;
+  }
+
+  .centerOne .left {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
 }
