@@ -2,6 +2,7 @@ import { useContext, useState } from "react"
 import { ContexData } from "../context/ContextDate"
 import { AiFillHome } from "react-icons/ai";
 import Swal from "sweetalert2";
+import { NavLink } from "react-router-dom";
 
 function Add() {
     const { backfunc, yangiP, setYangiP, yangiRef } = useContext(ContexData);
@@ -76,7 +77,10 @@ function Add() {
     return (
         <>
             <div className="crud">
-                <button className="crud_home" onClick={backfunc}><span><AiFillHome /></span></button>
+                <div className="crud_home">
+                    <button onClick={backfunc}><span><AiFillHome /></span></button>
+                    <NavLink to={'/user-product'}><span>product</span></NavLink>
+                </div>
                 <div className="crud_kontent">
                     <h1>Add your new Product</h1>
                     <div className="add">

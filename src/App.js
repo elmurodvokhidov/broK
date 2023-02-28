@@ -12,6 +12,7 @@ import Belt from "./pages/Belt";
 import MyProfile from "./pages/MyProfile";
 import Add from "./pages/Add";
 import { Route, Routes } from "react-router-dom";
+import UserProduct from "./pages/UserProduct";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/like" element={<Favorite />} />
         <Route path="/myprofil" element={<MyProfile />} />
         <Route path="/crud" element={<Add />} />
+        <Route path="/user-product" element={<UserProduct />} />
       </Routes>
     </div>
   );
